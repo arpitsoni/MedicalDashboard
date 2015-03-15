@@ -16,6 +16,7 @@
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="assets/morris.js-0.4.3/morris.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/owl.carousel.css" type="text/css"> -->
 
       <!--right slidebar-->
@@ -55,7 +56,7 @@
                             <i class="fa fa-tasks"></i>
                             <span class="badge bg-success">6</span>
                         </a>
-                         <ul class="dropdown-menu extended tasks-bar">
+                         <!--<ul class="dropdown-menu extended tasks-bar">
                             <div class="notify-arrow notify-arrow-green"></div>
                             <li>
                                 <p class="green">You have 6 pending tasks</p>
@@ -129,7 +130,7 @@
                             <li class="external">
                                 <a href="#">See All Tasks</a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </li>
                     <!-- settings end -->
                     <!-- inbox dropdown start-->
@@ -163,7 +164,7 @@
                                     <span class="time">10 mins</span>
                                     </span>
                                     <span class="message">
-                                     Hi, Jhon Doe Bhai how are you ?
+                                     Hi, Jhon Doe how are you ?
                                     </span>
                                 </a>
                             </li>
@@ -187,7 +188,7 @@
                                     <span class="time">Just now</span>
                                     </span>
                                     <span class="message">
-                                        Hello, this is metrolab
+                                        Hello, this is Mark Loudermilk
                                     </span>
                                 </a>
                             </li>
@@ -333,7 +334,7 @@
                         </a>
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
-                            <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                            <li><a href="profile.html"><i class=" fa fa-suitcase"></i>Profile</a></li>
                             <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
                             <li><a href="#"><i class="fa fa-bell-o"></i> Notification</a></li>
                             <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
@@ -625,6 +626,42 @@
                           
                       </section>
                   </div>
+                  <div class="col-md-6">   
+                        <section class="panel panel-info">
+                              <div class="weather-bg">
+                                <div class="panel-heading">
+                                     <h3 class="panel-title">Software Information</h3>
+                                </div>
+                                  <div class="panel-body">
+                                      <div class="row">
+                                          <ul>
+                                            <li><span>Version:</span><span>1234567</span></li>
+                                            <li><span>Description:</span><span>1234567</span></li>
+                                            <li><span>BIOS:</span><span>1234567</span></li>
+                                          </ul>  
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                     </div>
+                     <div class="col-md-6">   
+                        <section class="panel panel-info">
+                              <div class="weather-bg">
+                                  <div class="panel-heading">
+                                     <h3 class="panel-title">System Information</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                      <div class="row">
+                                         <ul>
+                                            <li><span>Time: </span><span>12:17 AM</span></li>
+                                            <li><span id="ipAddress">IP Address:</span><span></span></li>
+                                            <li><span>Security: </span><span>Enabled</span></li>
+                                          </ul>  
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                     </div>
                 </div>
                 <!--Icons Section Ends-->
                 <!--Right Info Section Starts-->
@@ -653,6 +690,7 @@
                         <li role="presentation"><a href="#oxygen-level" aria-controls="oxygen-level" role="tab" data-toggle="tab"><i class="fa fa-circle-thin"></i> Oxygen Level</a></li>
                         <li role="presentation"><a href="#blood-pressure" aria-controls="blood-pressure" role="tab" data-toggle="tab"><i class="fa fa-tint"></i> Blood Pressure</a></li>
                         <li role="presentation"><a href="#weight" aria-controls="weight" role="tab" data-toggle="tab"><i class="fa fa-cubes"></i> Weight</a></li>
+                        <li role="presentation"><a href="#bloodSugar" aria-controls="bloodSugar" role="tab" data-toggle="tab"><i class="fa fa-cube"></i> Blood Sugar</a></li>
                       </ul>
                       <!-- Tab panes -->
                       <div class="tab-content">
@@ -725,6 +763,23 @@
                          </div>
                         </div>
                         <!--Weight Map Ends-->
+                          <!--Blood Sugar Map Starts-->
+                        <div role="tabpanel" class="tab-pane" id="bloodSugar">
+                          <div class="panel green-chart">
+                          <div class="panel-body">
+                              <div class="chart">
+                                  <div class="heading">
+                                      <span>Current Blood Sugar: 70</span>
+                                  </div>
+                                  <div id="barchart"></div>
+                              </div>
+                          </div>
+                          <div class="chart-tittle">
+                              <span class="title">Last Recorded Blood Sugar: 78</span>
+                          </div>
+                         </div>
+                        </div>
+                        <!--Blood Sugar Map Ends-->
                       </div>
                   </div>
                    <div class="col-md-12">
@@ -740,42 +795,18 @@
                           </li>
                         </ul>
                     </div>
-                    <div class="col-md-6">   
-                        <section class="panel panel-info">
-                              <div class="weather-bg">
-                                <div class="panel-heading">
-                                     <h3 class="panel-title">Software Information</h3>
-                                </div>
-                                  <div class="panel-body">
-                                      <div class="row">
-                                          <ul>
-                                            <li><span>Version:</span><span>1234567</span></li>
-                                            <li><span>Description:</span><span>1234567</span></li>
-                                            <li><span>BIOS:</span><span>1234567</span></li>
-                                          </ul>  
-                                      </div>
-                                  </div>
+                    <!--Morris Chart Starts-->
+                      <div class="col-lg-12">
+                          <section class="panel">
+                              <header class="panel-heading panel-title">
+                                  Pedometer Output
+                              </header>
+                              <div class="panel-body">
+                                  <div id="pedoMeter" class="graph"></div>
                               </div>
                           </section>
-                     </div>  
-                     <div class="col-md-6">   
-                        <section class="panel panel-info">
-                              <div class="weather-bg">
-                                  <div class="panel-heading">
-                                     <h3 class="panel-title">System Information</h3>
-                                  </div>
-                                  <div class="panel-body">
-                                      <div class="row">
-                                         <ul>
-                                            <li><span>Time:</span><span>1234567</span></li>
-                                            <li><span>IP Address:</span><span>1234567</span></li>
-                                            <li><span>Security:</span><span>1234567</span></li>
-                                          </ul>  
-                                      </div>
-                                  </div>
-                              </div>
-                          </section>
-                     </div>  
+                      </div>
+                    <!--Morris Chart Ends-->
                 </div>  
                 <!--Right Info Section Ends-->
               </div>
@@ -895,6 +926,8 @@
     <script src="js/owl.carousel.js" ></script>
     <script src="js/jquery.customSelect.min.js" ></script>
     <script src="js/respond.min.js" ></script>
+    <script src="assets/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
+    <script src="assets/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
 
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
@@ -906,6 +939,7 @@
     <script src="js/sparkline-chart.js"></script>
     <script src="js/easy-pie-chart.js"></script>
     <script src="js/count.js"></script>
+    <script src="js/morris-script.js"></script>
 
   <script>
 
@@ -913,9 +947,11 @@
 
       $(function(){
           $('select.styled').customSelect();
+          $("#ipAddress").html("IP Address: "+ myip);
       });
 
   </script>
+  <script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
 
   </body>
 </html>
