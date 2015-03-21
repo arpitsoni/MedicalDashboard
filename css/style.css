@@ -192,6 +192,13 @@ a, a:hover, a:focus {
     padding: 10px 5px;
 }
 
+.nav>li>a.medical-data{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+
 /*sidebar navigation*/
 
 #sidebar {
@@ -5964,4 +5971,17 @@ a.guest-on i {
 .m-thumb img {
     width: 100%;
     border:1px solid #ddd;
+}
+
+/*Medical Dashboard Page*/
+.user-info li span:nth-child(1) {
+    color:rgb(18, 56, 18);
+}
+
+.user-info li span:nth-child(2) {
+    color:rgb(5, 17, 98);
+}
+
+.diagnosis-section span, .allergies span, .medications span{
+     color:rgb(5, 17, 98);
 }
