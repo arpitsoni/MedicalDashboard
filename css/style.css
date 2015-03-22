@@ -27,7 +27,9 @@ body {
 .margin-top-10 {
     margin-top: 10px;
 }
-
+.pad20 {
+    padding-top: 20px;
+}
 .tab-content {
     margin-top: 1px;
 }
@@ -5984,4 +5986,13 @@ a.guest-on i {
 
 .diagnosis-section span, .allergies span, .medications span{
      color:rgb(5, 17, 98);
+}
+
+/*-------------------------Code added by - ARCHIT-------------------- */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #F08181;
+    color: #fff;
+    border-bottom-color: transparent;
 }
