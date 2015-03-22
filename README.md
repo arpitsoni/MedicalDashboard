@@ -1,2 +1,0 @@
-# MedicalDashboard
-Medical Dashboard
