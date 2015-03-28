@@ -68,38 +68,38 @@
 
 //datetime picker start
 
-$(".form_datetime").datetimepicker({
-    format: 'yyyy-mm-dd hh:ii',
-    autoclose: true,
-    todayBtn: true,
-    pickerPosition: "bottom-left"
-});
+// $(".form_datetime").datetimepicker({
+//     format: 'yyyy-mm-dd hh:ii',
+//     autoclose: true,
+//     todayBtn: true,
+//     pickerPosition: "bottom-left"
+// });
 
 
-$(".form_datetime-component").datetimepicker({
-    format: "dd MM yyyy - hh:ii",
-    autoclose: true,
-    todayBtn: true,
-    pickerPosition: "bottom-left"
-});
+// $(".form_datetime-component").datetimepicker({
+//     format: "dd MM yyyy - hh:ii",
+//     autoclose: true,
+//     todayBtn: true,
+//     pickerPosition: "bottom-left"
+// });
 
-$(".form_datetime-adv").datetimepicker({
-    format: "dd MM yyyy - hh:ii",
-    autoclose: true,
-    todayBtn: true,
-    startDate: "2013-02-14 10:00",
-    minuteStep: 10,
-    pickerPosition: "bottom-left"
+// $(".form_datetime-adv").datetimepicker({
+//     format: "dd MM yyyy - hh:ii",
+//     autoclose: true,
+//     todayBtn: true,
+//     startDate: "2013-02-14 10:00",
+//     minuteStep: 10,
+//     pickerPosition: "bottom-left"
 
-});
+// });
 
-$(".form_datetime-meridian").datetimepicker({
-    format: "dd MM yyyy - HH:ii P",
-    showMeridian: true,
-    autoclose: true,
-    todayBtn: true,
-    pickerPosition: "bottom-left"
-});
+// $(".form_datetime-meridian").datetimepicker({
+//     format: "dd MM yyyy - HH:ii P",
+//     showMeridian: true,
+//     autoclose: true,
+//     todayBtn: true,
+//     pickerPosition: "bottom-left"
+// });
 
 //datetime picker end
 
@@ -107,83 +107,83 @@ $(".form_datetime-meridian").datetimepicker({
 $('.timepicker-default').timepicker();
 
 
-$('.timepicker-24').timepicker({
-    autoclose: true,
-    minuteStep: 1,
-    showSeconds: true,
-    showMeridian: false
-});
+// $('.timepicker-24').timepicker({
+//     autoclose: true,
+//     minuteStep: 1,
+//     showSeconds: true,
+//     showMeridian: false
+// });
 
 //timepicker end
 
 //colorpicker start
 
-$('.colorpicker-default').colorpicker({
-    format: 'hex'
-});
-$('.colorpicker-rgba').colorpicker();
+// $('.colorpicker-default').colorpicker({
+//     format: 'hex'
+// });
+// $('.colorpicker-rgba').colorpicker();
 
 //colorpicker end
 
 //multiselect start
 
 
-    $('#my_multi_select1').multiSelect();
-    $('#my_multi_select2').multiSelect({
-        selectableOptgroup: true
-    });
+    // $('#my_multi_select1').multiSelect();
+    // $('#my_multi_select2').multiSelect({
+    //     selectableOptgroup: true
+    // });
 
-    $('#my_multi_select3').multiSelect({
-        selectableHeader: "<input type='text' class='form-control search-input' autocomplete='off' placeholder='search...'>",
-        selectionHeader: "<input type='text' class='form-control search-input' autocomplete='off' placeholder='search...'>",
-        afterInit: function (ms) {
-            var that = this,
-                $selectableSearch = that.$selectableUl.prev(),
-                $selectionSearch = that.$selectionUl.prev(),
-                selectableSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selectable:not(.ms-selected)',
-                selectionSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selection.ms-selected';
+    // $('#my_multi_select3').multiSelect({
+    //     selectableHeader: "<input type='text' class='form-control search-input' autocomplete='off' placeholder='search...'>",
+    //     selectionHeader: "<input type='text' class='form-control search-input' autocomplete='off' placeholder='search...'>",
+    //     afterInit: function (ms) {
+    //         var that = this,
+    //             $selectableSearch = that.$selectableUl.prev(),
+    //             $selectionSearch = that.$selectionUl.prev(),
+    //             selectableSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selectable:not(.ms-selected)',
+    //             selectionSearchString = '#' + that.$container.attr('id') + ' .ms-elem-selection.ms-selected';
 
-            that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
-                .on('keydown', function (e) {
-                    if (e.which === 40) {
-                        that.$selectableUl.focus();
-                        return false;
-                    }
-                });
+    //         that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+    //             .on('keydown', function (e) {
+    //                 if (e.which === 40) {
+    //                     that.$selectableUl.focus();
+    //                     return false;
+    //                 }
+    //             });
 
-            that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
-                .on('keydown', function (e) {
-                    if (e.which == 40) {
-                        that.$selectionUl.focus();
-                        return false;
-                    }
-                });
-        },
-        afterSelect: function () {
-            this.qs1.cache();
-            this.qs2.cache();
-        },
-        afterDeselect: function () {
-            this.qs1.cache();
-            this.qs2.cache();
-        }
-    });
+    //         that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+    //             .on('keydown', function (e) {
+    //                 if (e.which == 40) {
+    //                     that.$selectionUl.focus();
+    //                     return false;
+    //                 }
+    //             });
+    //     },
+    //     afterSelect: function () {
+    //         this.qs1.cache();
+    //         this.qs2.cache();
+    //     },
+    //     afterDeselect: function () {
+    //         this.qs1.cache();
+    //         this.qs2.cache();
+    //     }
+    // });
 
 
 //multiselect end
 
 
-//spinner start
-$('#spinner1').spinner();
-$('#spinner2').spinner({disabled: true});
-$('#spinner3').spinner({value:0, min: 0, max: 10});
-$('#spinner4').spinner({value:0, step: 5, min: 0, max: 200});
-//spinner end
+// //spinner start
+// $('#spinner1').spinner();
+// $('#spinner2').spinner({disabled: true});
+// $('#spinner3').spinner({value:0, min: 0, max: 10});
+// $('#spinner4').spinner({value:0, step: 5, min: 0, max: 200});
+// //spinner end
 
 
 
-//wysihtml5 start
+// //wysihtml5 start
 
-$('.wysihtml5').wysihtml5();
+// $('.wysihtml5').wysihtml5();
 
-//wysihtml5 end
+// //wysihtml5 end

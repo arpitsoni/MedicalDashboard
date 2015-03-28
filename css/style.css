@@ -24,6 +24,10 @@ body {
     color: green;
 }
 
+.blue-font{
+    color:rgb(5, 17, 98);
+}
+
 .margin-top-10 {
     margin-top: 10px;
 }
@@ -4144,7 +4148,7 @@ span.customSelect.changed {
 
 .tools a {
     margin-left: 10px;
-    color: #a7a7a7;
+    color: #ffffff;
     font-size: 12px;
 }
 
@@ -5988,7 +5992,6 @@ a.guest-on i {
      color:rgb(5, 17, 98);
 }
 
-/*-------------------------Code added by - ARCHIT-------------------- */
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: #555;
     cursor: default;
