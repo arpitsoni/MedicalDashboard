@@ -20,12 +20,17 @@ body {
     -moz-font-smoothing: antialiased;
 }
 
+/************* Custom Font Colors **************/
 .green-font {
     color: green;
 }
 
 .blue-font{
     color:rgb(5, 17, 98);
+}
+
+.black-font{
+    color: #000000;
 }
 
 .margin-top-10 {
