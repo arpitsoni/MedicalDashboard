@@ -4,22 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Mosaddek">
-    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <meta name="author" content="Arpit Soni">
+    <meta name="keyword" content="Medical Dashboard">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Profile Edit</title>
+    <title>Bluetooth Device Dashboard</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="assets/morris.js-0.4.3/morris.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/owl.carousel.css" type="text/css"> -->
+
       <!--right slidebar-->
-      <link href="css/slidebars.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <link href="css/slidebars.css" rel="stylesheet">
+
+    <!-- Custom styles for index page -->
+
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
+
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -30,9 +38,9 @@
 
   <body>
 
-  <section id="container" class="">
-     <!--header start-->
-        <header class="header white-bg">
+  <section id="container" >
+      <!--header start-->
+      <header class="header white-bg">
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
@@ -342,7 +350,7 @@
         </header>
       <!--header end-->
       <!--sidebar start-->
-        <aside>
+      <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
@@ -470,146 +478,350 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-              <!-- page start-->
+              <!--Page Name-->
               <div class="row">
-                  <aside class="profile-nav col-lg-3">
+                <div class="col-md-12 page-name">
+                  
+                  <h1><i class="fa fa-dashboard"></i>Dashboard</h1>
+                </div>
+              </div>
+              <!--state overview start-->
+              <div class="row state-overview margin-top-10">
+                <!--Icons Section Starts-->
+                <div class="col-md-6">
+                  <div class="col-lg-3 col-sm-6">
                       <section class="panel">
-                          <div class="user-heading round">
-                              <a href="#">
-                                  <img src="img/profile-avatar.jpg" alt="">
-                              </a>
-                              <h1>Mark Loudermilk</h1>
-                              <p>mark@fabc.com</p>
-                          </div>
-
-                          <ul class="nav nav-pills nav-stacked">
-                             <li><a href="profile.html"> <i class="fa fa-user"></i> Profile</a></li>
-                             <!--   <li><a href="profile-activity.html"> <i class="fa fa-calendar"></i> Recent Activity <span class="label label-danger pull-right r-activity">9</span></a></li> -->
-                              <li  class="active"><a href="profile-edit.html"> <i class="fa fa-edit"></i> Edit profile</a></li>
-                          </ul>
-
+                          <a class="symbol pink" href="medical_data.html">
+                              <i class="fa fa-user-md"></i>
+                              <p>Medical Data</p>
+                          </a>
+                          
                       </section>
-                  </aside>
-                  <aside class="profile-info col-lg-9">
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
                       <section class="panel">
-                          <div class="bio-graph-heading">
-                              About me, loreum ipsium.............
-                          </div>
-                          <div class="panel-body bio-graph-info">
-                              <h1> Profile Info</h1>
-                              <form class="form-horizontal" role="form">
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">About Me</label>
-                                      <div class="col-lg-10">
-                                          <textarea name="" id="" class="form-control" cols="30" rows="10"></textarea>
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">First Name</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="f-name" placeholder=" ">
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">Last Name</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="l-name" placeholder=" ">
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">Country</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="c-name" placeholder=" ">
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">Birthday</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="b-day" placeholder=" ">
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">Occupation</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="occupation" placeholder=" ">
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">Email</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="email" placeholder=" ">
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">Mobile</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="mobile" placeholder=" ">
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label  class="col-lg-2 control-label">Website URL</label>
-                                      <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="url" placeholder="http://www.abc.com ">
-                                      </div>
-                                  </div>
-
-                                  <div class="form-group">
-                                      <div class="col-lg-offset-2 col-lg-10">
-                                          <button type="submit" class="btn btn-success">Save</button>
-                                          <button type="button" class="btn btn-default">Cancel</button>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
+                          <a class="symbol violet" href="diet.html">
+                              <i class="fa fa-cutlery"></i>
+                               <p>Diet</p>
+                          </a>
+                         
                       </section>
-                      <section>
-                          <div class="panel panel-primary">
-                              <div class="panel-heading"> Sets New Password & Image</div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol orange" href="workout.html">
+                              <i class="fa fa-cogs"></i>
+                               <p>Workout</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol blue" target="_blank" href="http://creative.aargss.com/SocialMedia/">
+                              <i class="fa fa-user"></i>
+                               <p>Social</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                   <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol yellow" href="journals.html">
+                              <i class="fa fa-th"></i>
+                              <p>Journals</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol orange" href="#">
+                              <i class="fa fa-leanpub"></i>
+                               <p>Learn</p>
+                          </a>
+                         
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol green" href="#">
+                              <i class="fa fa-video-camera"></i>
+                               <p>Video</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol red" href="symptom_checker.html">
+                              <i class="fa fa-bar-chart-o"></i>
+                               <p>Symptom Checker</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                   <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol terques" href="#">
+                              <i class="fa fa-user"></i>
+                              <p>Recipes</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol green" href="print_card.html">
+                              <i class="fa fa-print"></i>
+                               <p>Print Card</p>
+                          </a>
+                         
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol blue" href="email_doc.html">
+                              <i class="fa fa-envelope-o"></i>
+                               <p>Email Doctor</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol terques" href="">
+                              <i class="fa fa-archive"></i>
+                               <p>Store</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                   <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol violet" href="mental_health.html">
+                              <i class="fa fa-user"></i>
+                              <p>Mental Health</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol yellow" href="">
+                              <i class="fa fa-tags"></i>
+                               <p>Coaching</p>
+                          </a>
+                         
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol red" href="literature.html">
+                              <i class="fa fa-shopping-cart"></i>
+                              <p>Literature</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                      <section class="panel">
+                          <a class="symbol pink" href="entertainment.html">
+                              <i class="fa fa-bar-chart-o"></i>
+                               <p>Entertainment</p>
+                          </a>
+                          
+                      </section>
+                  </div>
+                  <div class="col-md-6">   
+                        <section class="panel panel-info">
+                              <div class="weather-bg">
+                                <div class="panel-heading">
+                                     <h3 class="panel-title">Software Information</h3>
+                                </div>
+                                  <div class="panel-body">
+                                      <div class="row">
+                                          <ul>
+                                            <li><span>Version:</span><span>1234567</span></li>
+                                            <li><span>Description:</span><span>1234567</span></li>
+                                            <li><span>BIOS:</span><span>1234567</span></li>
+                                          </ul>  
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                     </div>
+                     <div class="col-md-6">   
+                        <section class="panel panel-info">
+                              <div class="weather-bg">
+                                  <div class="panel-heading">
+                                     <h3 class="panel-title">System Information</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                      <div class="row">
+                                         <ul>
+                                            <li><span>Time: </span><span>12:17 AM</span></li>
+                                            <li><span id="ipAddress">IP Address:</span><span></span></li>
+                                            <li><span>Security: </span><span>Enabled</span></li>
+                                          </ul>  
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                     </div>
+                </div>
+                <!--Icons Section Ends-->
+                <!--Right Info Section Starts-->
+                <div class="col-md-6">
+                  <div class="col-md-12">
+                    <div class="col-md-8 system-status">
+                      <h4 class="margin-top-10">System Status</h4>
+                      <h5 class="green-font">Device is working well <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></h5>
+                    </div>
+                    <div class="col-md-4 margin-top-10">
+                      <button type="button" class="btn btn-primary" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-primary" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-primary" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-12 pad20" role="tabpanel">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#heart-rate" aria-controls="heart-rate" role="tab" data-toggle="tab"><i class="fa fa-heartbeat"></i> Heart Rate</a></li>
+                        <li role="presentation"><a href="#oxygen-level" aria-controls="oxygen-level" role="tab" data-toggle="tab"><i class="fa fa-circle-thin"></i> Oxygen Level</a></li>
+                        <li role="presentation"><a href="#blood-pressure" aria-controls="blood-pressure" role="tab" data-toggle="tab"><i class="fa fa-tint"></i> Blood Pressure</a></li>
+                        <li role="presentation"><a href="#weight" aria-controls="weight" role="tab" data-toggle="tab"><i class="fa fa-cubes"></i> Weight</a></li>
+                        <li role="presentation"><a href="#bloodSugar" aria-controls="bloodSugar" role="tab" data-toggle="tab"><i class="fa fa-cube"></i> Blood Sugar</a></li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <!--Heart Rate Map Starts-->
+                        <div role="tabpanel" class="tab-pane active" id="heart-rate">
+                          <div class="panel terques-chart">
+                            <div class="panel-body chart-texture">
+                                <div class="chart">
+                                    <div class="heading">
+                                        <span>Current Heart Rate: 72</span>
+                                    </div>
+                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
+                                </div>
+                            </div>
+                            <div class="chart-tittle">
+                                <span class="title">Last Heart Rate Recorded: 70</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Heart Rate Map Ends-->
+                        <!--Oxygen Level Map Starts-->
+                        <div role="tabpanel" class="tab-pane" id="oxygen-level">
+                           <div class="panel green-chart">
                               <div class="panel-body">
-                                  <form class="form-horizontal" role="form">
-                                      <div class="form-group">
-                                          <label  class="col-lg-2 control-label">Current Password</label>
-                                          <div class="col-lg-6">
-                                              <input type="password" class="form-control" id="c-pwd" placeholder=" ">
-                                          </div>
+                                  <div class="chart">
+                                      <div class="heading">
+                                          <span>Current Oxygen Level: xyz</span>
                                       </div>
-                                      <div class="form-group">
-                                          <label  class="col-lg-2 control-label">New Password</label>
-                                          <div class="col-lg-6">
-                                              <input type="password" class="form-control" id="n-pwd" placeholder=" ">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label  class="col-lg-2 control-label">Re-type New Password</label>
-                                          <div class="col-lg-6">
-                                              <input type="password" class="form-control" id="rt-pwd" placeholder=" ">
-                                          </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                          <label  class="col-lg-2 control-label">Change Image</label>
-                                          <div class="col-lg-6">
-                                              <input type="file" class="file-pos" id="exampleInputFile">
-                                          </div>
-                                      </div>
-
-                                      <div class="form-group">
-                                          <div class="col-lg-offset-2 col-lg-10">
-                                              <button type="submit" class="btn btn-info">Save</button>
-                                              <button type="button" class="btn btn-default">Cancel</button>
-                                          </div>
-                                      </div>
-                                  </form>
+                                      <div id="barchart"></div>
+                                  </div>
+                              </div>
+                              <div class="chart-tittle">
+                                  <span class="title">Last Recorded Oxygen Level: </span>
+                              </div>
+                           </div>
+                        </div>
+                        <!--Oxygen Level Map Ends-->
+                        <!--Blood Pressure Map Starts-->
+                        <div role="tabpanel" class="tab-pane" id="blood-pressure">
+                           <div class="panel terques-chart">
+                            <div class="panel-body chart-texture">
+                                <div class="chart">
+                                    <div class="heading">
+                                        <span>Current Blood Pressure</span>
+                                        <strong>72</strong>
+                                    </div>
+                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
+                                </div>
+                            </div>
+                            <div class="chart-tittle">
+                                <span class="title">Last Recorded Blood Pressure: abc</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Blood Pressure Map Ends-->
+                        <!--Weight Map Starts-->
+                        <div role="tabpanel" class="tab-pane" id="weight">
+                          <div class="panel green-chart">
+                          <div class="panel-body">
+                              <div class="chart">
+                                  <div class="heading">
+                                      <span>Current Weight: 70Kgs</span>
+                                  </div>
+                                  <div id="barchart"></div>
                               </div>
                           </div>
-                      </section>
-                  </aside>
+                          <div class="chart-tittle">
+                              <span class="title">Last Recorded Weight: 78Kgs</span>
+                          </div>
+                         </div>
+                        </div>
+                        <!--Weight Map Ends-->
+                          <!--Blood Sugar Map Starts-->
+                        <div role="tabpanel" class="tab-pane" id="bloodSugar">
+                          <div class="panel green-chart">
+                          <div class="panel-body">
+                              <div class="chart">
+                                  <div class="heading">
+                                      <span>Current Blood Sugar: 70</span>
+                                  </div>
+                                  <div id="barchart"></div>
+                              </div>
+                          </div>
+                          <div class="chart-tittle">
+                              <span class="title">Last Recorded Blood Sugar: 78</span>
+                          </div>
+                         </div>
+                        </div>
+                        <!--Blood Sugar Map Ends-->
+                      </div>
+                  </div>
+                   <div class="col-md-12">
+                        <ul class="device-info">
+                          <li>
+                            <a href=""><i class="fa fa-hand-o-right fa-lg"></i> The storage pool 'SP3' is faulted dur to failure</a>
+                          </li>
+                           <li>
+                            <a href=""> <i class="fa fa-hand-o-right fa-lg"></i> Support access is currently enabled</a>
+                          </li>
+                           <li>
+                            <a href=""><i class="fa fa-hand-o-right fa-lg"></i> Your device software has been upgraded to version 2.5.3.2625</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <!--Morris Chart Starts-->
+                      <div class="col-lg-12 margin-top-10">
+                          <section class="panel">
+                              <header class="panel-heading panel-title">
+                                  Pedometer Output
+                              </header>
+                              <div class="panel-body">
+                                  <div id="pedoMeter" class="graph"></div>
+                              </div>
+                          </section>
+                      </div>
+                    <!--Morris Chart Ends-->
+                </div>  
+                <!--Right Info Section Ends-->
               </div>
-
-              <!-- page end-->
+              <!--state overview end-->
           </section>
       </section>
       <!--main content end-->
+
       <!-- Right Slidebar start -->
       <div class="sb-slidebar sb-right sb-style-overlay">
           <h5 class="side-title">Family Members</h5>
@@ -697,6 +909,7 @@
           </ul>
       </div>
       <!-- Right Slidebar end -->
+
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
@@ -715,15 +928,37 @@
     <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/owl.carousel.js" ></script>
+    <script src="js/jquery.customSelect.min.js" ></script>
     <script src="js/respond.min.js" ></script>
+    <script src="assets/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
+    <script src="assets/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
 
-  <!--right slidebar-->
-  <script src="js/slidebars.min.js"></script>
+    <!--right slidebar-->
+    <script src="js/slidebars.min.js"></script>
 
     <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>
 
+    <!--script for this page-->
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/easy-pie-chart.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/morris-script.js"></script>
+
+  <script>
+
+      //custom select box
+
+      $(function(){
+          $('select.styled').customSelect();
+          $("#ipAddress").html("IP Address: "+ myip);
+      });
+
+  </script>
+  <script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
 
   </body>
 </html>
