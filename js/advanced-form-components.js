@@ -83,15 +83,15 @@
 //     pickerPosition: "bottom-left"
 // });
 
-// $(".form_datetime-adv").datetimepicker({
-//     format: "dd MM yyyy - hh:ii",
-//     autoclose: true,
-//     todayBtn: true,
-//     startDate: "2013-02-14 10:00",
-//     minuteStep: 10,
-//     pickerPosition: "bottom-left"
+$(".form_datetime-adv").datetimepicker({
+    format: "dd MM yyyy - hh:ii",
+    autoclose: true,
+    todayBtn: true,
+    startDate: "2013-02-14 10:00",
+    minuteStep: 10,
+    pickerPosition: "bottom-left"
 
-// });
+});
 
 // $(".form_datetime-meridian").datetimepicker({
 //     format: "dd MM yyyy - HH:ii P",
