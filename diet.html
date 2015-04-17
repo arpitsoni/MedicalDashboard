@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Arpit Soni">
-    <meta name="keyword" content="Medical Dashboard">
+    <meta name="keyword" content="Medical Dashboard-DietInformation">
     <link rel="shortcut icon" href="img/favicon.png">
 
     <title>Bluetooth Device Dashboard</title>
@@ -16,18 +16,14 @@
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="assets/morris.js-0.4.3/morris.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/owl.carousel.css" type="text/css"> -->
-
+   
       <!--right slidebar-->
     <link href="css/slidebars.css" rel="stylesheet">
 
-    <!-- Custom styles for index page -->
+    <!-- Custom styles for this page -->
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
-
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -477,347 +473,435 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">
+          <section class="wrapper state-overview">
               <!--Page Name-->
-              <div class="row">
+            <div class="row">
                 <div class="col-md-12 page-name">
-                  
-                  <h1><i class="fa fa-dashboard"></i>Dashboard</h1>
+                  <h1><i class="fa fa-cutlery"></i>Diet 
+                    <a href="#createDietGoalDiv" class="btn btn-md btn-primary pull-right">Create Goals</a>
+                  </h1>
                 </div>
-              </div>
-              <!--state overview start-->
-              <div class="row state-overview margin-top-10">
-                <!--Icons Section Starts-->
-                <div class="col-md-6">
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol pink" href="medical_data.html">
-                              <i class="fa fa-user-md"></i>
-                              <p>Medical Data</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol violet" href="diet.html">
-                              <i class="fa fa-cutlery"></i>
-                               <p>Diet</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol orange" href="workout.html">
-                              <i class="fa fa-cogs"></i>
-                               <p>Workout</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol blue" target="_blank" href="http://creative.aargss.com/SocialMedia/">
-                              <i class="fa fa-user"></i>
-                               <p>Social</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol yellow" href="journals.html">
-                              <i class="fa fa-th"></i>
-                              <p>Journals</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol orange" href="#">
-                              <i class="fa fa-leanpub"></i>
-                               <p>Learn</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol green" href="#">
-                              <i class="fa fa-video-camera"></i>
-                               <p>Video</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol red" href="symptom_checker.html">
-                              <i class="fa fa-bar-chart-o"></i>
-                               <p>Symptom Checker</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol terques" href="#">
-                              <i class="fa fa-user"></i>
-                              <p>Recipes</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol green" href="print_card.html">
-                              <i class="fa fa-print"></i>
-                               <p>Print Card</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol blue" href="email_doc.html">
-                              <i class="fa fa-envelope-o"></i>
-                               <p>Email Doctor</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol terques" href="">
-                              <i class="fa fa-archive"></i>
-                               <p>Store</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol violet" href="mental_health.html">
-                              <i class="fa fa-user"></i>
-                              <p>Mental Health</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol yellow" href="">
-                              <i class="fa fa-tags"></i>
-                               <p>Coaching</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol red" href="literature.html">
-                              <i class="fa fa-shopping-cart"></i>
-                              <p>Literature</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol pink" href="entertainment.html">
-                              <i class="fa fa-bar-chart-o"></i>
-                               <p>Entertainment</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-md-6">   
-                        <section class="panel panel-info">
-                              <div class="weather-bg">
-                                <div class="panel-heading">
-                                     <h3 class="panel-title">Software Information</h3>
-                                </div>
-                                  <div class="panel-body">
-                                      <div class="row">
-                                          <ul>
-                                            <li><span>Version:</span><span>1234567</span></li>
-                                            <li><span>Description:</span><span>1234567</span></li>
-                                            <li><span>BIOS:</span><span>1234567</span></li>
-                                          </ul>  
-                                      </div>
-                                  </div>
+            </div>
+            <!--Workout Summary Section starts-->
+            <div class="row margin-top-10">
+                <div class="col-md-12">
+                    <div class="panel panel-primary user-info">
+                              <div class="panel-heading blue">Workout Summary
+                                    <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
                               </div>
-                          </section>
-                     </div>
-                     <div class="col-md-6">   
-                        <section class="panel panel-info">
-                              <div class="weather-bg">
-                                  <div class="panel-heading">
-                                     <h3 class="panel-title">System Information</h3>
-                                  </div>
-                                  <div class="panel-body">
-                                      <div class="row">
-                                         <ul>
-                                            <li><span>Time: </span><span>12:17 AM</span></li>
-                                            <li><span id="ipAddress">IP Address:</span><span></span></li>
-                                            <li><span>Security: </span><span>Enabled</span></li>
-                                          </ul>  
-                                      </div>
-                                  </div>
+                              <div class="panel-body">
+                                 <div class="col-md-3">
+                                    <canvas id="pie" height="200" width="200"></canvas>
+                                    <span id="pieChartLegends"></span>
+                                 </div>
+                                 <div class="col-md-9">
+                                    <table class="table table-striped">
+                                      <thead>
+                                      <tr>
+                                          <th>S.No</th>
+                                          <th>Activity</th>
+                                          <th>Workouts</th>
+                                          <th>Duration</th>
+                                          <th>Calories</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                          <td>1</td>
+                                          <td><i class="fa fa-bicycle"></i>Road Cycling</td>
+                                          <td>24</td>
+                                          <td>45:58:05</td>
+                                          <td>28000</td>
+                                      </tr>
+                                      <tr>
+                                          <td>2</td>
+                                          <td><i class="fa fa-street-view"></i>Walking</td>
+                                          <td>13</td>
+                                          <td>14:45:32</td>
+                                          <td>7892</td>
+                                      </tr>
+                                      <tr>
+                                          <td>3</td>
+                                          <td><i class="fa fa-car"></i><span>Commuting</span></td>
+                                          <td>3</td>
+                                          <td>1:23:40</td>
+                                          <td>789</td>
+                                      </tr>
+                                        <tr>
+                                          <td></td>
+                                          <td>Total</td>
+                                          <td>40</td>
+                                          <td>62:07:17</td>
+                                          <td>36681</td>
+                                      </tr>
+                                      </tbody>
+                                  </table>
+                                 </div>
                               </div>
-                          </section>
-                     </div>
+                    </div>
                 </div>
-                <!--Icons Section Ends-->
-                <!--Right Info Section Starts-->
+            </div>
+            <!--Workout Summary Section ends-->
+            <!--Calories Summary and Breakdown Section starts-->
+            <div class="row margin-top-10">
                 <div class="col-md-6">
-                  <div class="col-md-12">
-                    <div class="col-md-8 system-status">
-                      <h4 class="margin-top-10">System Status</h4>
-                      <h5 class="green-font">Device is working well <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></h5>
+                    <div class="panel panel-primary user-info">
+                          <div class="panel-heading pink">Daily Calorie Breakdown
+                                <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                </span>
+                          </div>
+                          <div class="panel-body">
+                             <div class="col-md-3">
+                                <canvas id="dailyCalorieBreakdownBarChart" height="270" width="400"></canvas>
+                                <!-- <span id="pieChartLegends"></span> -->
+                             </div>
+                          </div>
                     </div>
-                    <div class="col-md-4 margin-top-10">
-                      <button type="button" class="btn btn-primary" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-primary" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-primary" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                      </button>
+                </div>    
+                <div class="col-md-6">
+                    <div class="panel panel-primary user-info">
+                          <div class="panel-heading orange">Daily Calorie Summary
+                                <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                </span>
+                          </div>
+                          <div class="panel-body">
+                             <div class="col-md-6">
+                                <canvas id="dailyCalorieSummaryPieChart" height="200" width="200"></canvas>
+                                <span id="dailyCalorieSummaryPieChartLegends"></span>
+                             </div>
+                             <div class="col-md-6">
+                                    <table class="table table-striped">
+                                      <thead class="blue-font">
+                                      <tr>
+                                          <th>Calories</th>
+                                          <th>2134</th>
+                                      </tr>
+                                       <tr>
+                                          <th>Points</th>
+                                          <th>14</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                          <td>Carbs</td>
+                                          <td>72%</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Proteins</td>
+                                          <td>17%</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Fats</td>
+                                          <td>12%</td>
+                                      </tr>
+                                      </tbody>
+                                  </table>
+                                 </div>
+                          </div>
                     </div>
-                  </div>
-                  <div class="col-md-12 pad20" role="tabpanel">
-                      <!-- Nav tabs -->
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#heart-rate" aria-controls="heart-rate" role="tab" data-toggle="tab"><i class="fa fa-heartbeat"></i> Heart Rate</a></li>
-                        <li role="presentation"><a href="#oxygen-level" aria-controls="oxygen-level" role="tab" data-toggle="tab"><i class="fa fa-circle-thin"></i> Oxygen Level</a></li>
-                        <li role="presentation"><a href="#blood-pressure" aria-controls="blood-pressure" role="tab" data-toggle="tab"><i class="fa fa-tint"></i> Blood Pressure</a></li>
-                        <li role="presentation"><a href="#weight" aria-controls="weight" role="tab" data-toggle="tab"><i class="fa fa-cubes"></i> Weight</a></li>
-                        <li role="presentation"><a href="#bloodSugar" aria-controls="bloodSugar" role="tab" data-toggle="tab"><i class="fa fa-cube"></i> Blood Sugar</a></li>
-                      </ul>
-                      <!-- Tab panes -->
-                      <div class="tab-content">
-                        <!--Heart Rate Map Starts-->
-                        <div role="tabpanel" class="tab-pane active" id="heart-rate">
-                          <div class="panel terques-chart">
-                            <div class="panel-body chart-texture">
-                                <div class="chart">
-                                    <div class="heading">
-                                        <span>Current Heart Rate: 72</span>
+                </div>
+            </div>
+            <!--Calories Summary and Breakdown Section ends-->
+            <!--Weight and Points Section starts-->
+            <div class="row margin-top-10">
+                <div class="col-md-6">
+                    <div class="panel panel-primary user-info">
+                          <div class="panel-heading violet">Weight
+                                <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                </span>
+                          </div>
+                          <div class="panel-body">
+                             <div class="col-md-3">
+                                <canvas id="weightLineChart" height="200" width="400"></canvas>
+                             </div>
+                          </div>
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <div class="panel panel-primary user-info">
+                          <div class="panel-heading green">Points
+                                <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                </span>
+                          </div>
+                          <div class="panel-body">
+                             <div class="col-md-12">
+                                <canvas id="pointsBarChart" height="200" width="400"></canvas>
+                             </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!--Weight and Points Section ends-->
+             <!--Circular Graphs Section starts-->
+            <div class="row margin-top-10">
+                <div class="col-md-3">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading pink">Weight</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="easy-pie-chart">
+                                    <div class="percentage easyPieChart" data-percent="82" style="width: 175px; height: 135px; line-height: 135px;">
+                                        <span>182 lbs</span>
+                                        <canvas width="175" height="135"></canvas>
                                     </div>
-                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
                                 </div>
                             </div>
-                            <div class="chart-tittle">
-                                <span class="title">Last Heart Rate Recorded: 70</span>
-                            </div>
-                          </div>
                         </div>
-                        <!--Heart Rate Map Ends-->
-                        <!--Oxygen Level Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="oxygen-level">
-                           <div class="panel green-chart">
-                              <div class="panel-body">
-                                  <div class="chart">
-                                      <div class="heading">
-                                          <span>Current Oxygen Level: xyz</span>
-                                      </div>
-                                      <div id="barchart"></div>
-                                  </div>
-                              </div>
-                              <div class="chart-tittle">
-                                  <span class="title">Last Recorded Oxygen Level: </span>
-                              </div>
-                           </div>
-                        </div>
-                        <!--Oxygen Level Map Ends-->
-                        <!--Blood Pressure Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="blood-pressure">
-                           <div class="panel terques-chart">
-                            <div class="panel-body chart-texture">
-                                <div class="chart">
-                                    <div class="heading">
-                                        <span>Current Blood Pressure</span>
-                                        <strong>72</strong>
+                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                    </div> 
+                </div> 
+                <div class="col-md-3">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading red">Body Fat</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="easy-pie-chart">
+                                    <div class="percentage easyPieChart" data-percent="82" style="width: 135px; height: 135px; line-height: 135px;">
+                                        <span>18.7%</span>
+                                        <canvas width="135" height="135"></canvas>
                                     </div>
-                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
                                 </div>
                             </div>
-                            <div class="chart-tittle">
-                                <span class="title">Last Recorded Blood Pressure: abc</span>
-                            </div>
-                          </div>
                         </div>
-                        <!--Blood Pressure Map Ends-->
-                        <!--Weight Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="weight">
-                          <div class="panel green-chart">
-                          <div class="panel-body">
-                              <div class="chart">
-                                  <div class="heading">
-                                      <span>Current Weight: 70Kgs</span>
-                                  </div>
-                                  <div id="barchart"></div>
-                              </div>
-                          </div>
-                          <div class="chart-tittle">
-                              <span class="title">Last Recorded Weight: 78Kgs</span>
-                          </div>
-                         </div>
-                        </div>
-                        <!--Weight Map Ends-->
-                          <!--Blood Sugar Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="bloodSugar">
-                          <div class="panel green-chart">
-                          <div class="panel-body">
-                              <div class="chart">
-                                  <div class="heading">
-                                      <span>Current Blood Sugar: 70</span>
-                                  </div>
-                                  <div id="barchart"></div>
-                              </div>
-                          </div>
-                          <div class="chart-tittle">
-                              <span class="title">Last Recorded Blood Sugar: 78</span>
-                          </div>
-                         </div>
-                        </div>
-                        <!--Blood Sugar Map Ends-->
-                      </div>
-                  </div>
-                   <div class="col-md-12">
-                        <ul class="device-info">
-                          <li>
-                            <a href=""><i class="fa fa-hand-o-right fa-lg"></i> The storage pool 'SP3' is faulted dur to failure</a>
-                          </li>
-                           <li>
-                            <a href=""> <i class="fa fa-hand-o-right fa-lg"></i> Support access is currently enabled</a>
-                          </li>
-                           <li>
-                            <a href=""><i class="fa fa-hand-o-right fa-lg"></i> Your device software has been upgraded to version 2.5.3.2625</a>
-                          </li>
-                        </ul>
-                    </div>
-                    <!--Morris Chart Starts-->
-                      <div class="col-lg-12 margin-top-10">
-                          <section class="panel">
-                              <header class="panel-heading panel-title">
-                                  Pedometer Output
-                              </header>
-                              <div class="panel-body">
-                                  <div id="pedoMeter" class="graph"></div>
-                              </div>
-                          </section>
-                      </div>
-                    <!--Morris Chart Ends-->
+                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                    </div> 
                 </div>  
-                <!--Right Info Section Ends-->
-              </div>
-              <!--state overview end-->
+                <div class="col-md-3">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading Green">BMR</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="easy-pie-chart">
+                                    <div class="percentage easyPieChart" data-percent="82" style="width: 135px; height: 135px; line-height: 135px;">
+                                        <span>1682.4</span>
+                                        <canvas width="135" height="135"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                    </div> 
+                </div>  
+                <div class="col-md-3">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading violet">BMI</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="easy-pie-chart">
+                                    <div class="percentage easyPieChart" data-percent="82" style="width: 135px; height: 135px; line-height: 135px;">
+                                        <span>22.5</span>
+                                        <canvas width="135" height="135"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                    </div> 
+                </div>   
+            </div>
+            <!--Circular Graphs Section ends-->
+            <!--Goal Creation Section starts-->
+            <div class="row margin-top-10" id="createDietGoalDiv">
+                <div class="col-md-12">
+                   <div class="panel panel-primary">
+                    <header class="panel-heading">
+                      Create and Save Your Goal
+                      <span class="tools pull-right">
+                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                      </span>
+                    </header>
+                    <div class="panel-body">
+                        <form>
+                           <div class="form-group">
+                                <label>What are your Primary Goals?</label>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Loose Weight
+                                    </label>
+                                </div>  
+                                <div class="checkbox">  
+                                    <label>
+                                      <input type="checkbox"> Maintain Weight
+                                    </label>
+                                </div>    
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Gain Muscle Mass
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Get Lean
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Improve Cardiovascular and Heart
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Improve Digestion
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Reduce Inflammation
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Improve Immune System
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Improve Mood
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Improve Neurologic
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Functioning
+                                    </label>
+                                </div>
+                            </div> 
+                          <div class="form-group">
+                            <label>How would you describe your lifestyle?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                Little to no excercise each week (1.2)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Little exercise 1-3 days a week (1.375)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                Moderate exercise sports 3-5 times a week (1.55)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                Very active sports/workout 6-7 times a week (1.725)
+                              </label>
+                            </div>
+                             <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                Extremely active physically demanding job/sports/workout (1.9)
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label>How would you describe the way you gain or loose weight?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                I find it hard to gain weight even after a lot of meal
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                I find it easy to gain or lose weight by adjusting calories
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                I find it very difficult to loose weight
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                I find even eating small meals I gain weight
+                              </label>
+                            </div>
+                          </div>
+                            <div class="form-group">
+                                <label>Do you have any of the following conditions?</label>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Heart Disease
+                                    </label>
+                                </div>  
+                                <div class="checkbox">  
+                                    <label>
+                                      <input type="checkbox"> Cardiovascular Disease
+                                    </label>
+                                </div>    
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Blood Clots
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Anemia
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Gastrointenstnal Problem
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Stroke
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Kidney Disease
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Pancreatic Disease
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Insulin Dependent Diabetes
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Hypertension
+                                    </label>
+                                </div>
+                                <div class="checkbox">    
+                                    <label>
+                                      <input type="checkbox"> Hypoglycemia
+                                    </label>
+                                </div>
+                            </div> 
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <!--Goal Creation Section ends-->
+                
           </section>
       </section>
       <!--main content end-->
@@ -930,12 +1014,10 @@
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
     <script src="js/jquery.sparkline.js" type="text/javascript"></script>
     <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-    <script src="js/owl.carousel.js" ></script>
     <script src="js/jquery.customSelect.min.js" ></script>
     <script src="js/respond.min.js" ></script>
-    <script src="assets/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
-    <script src="assets/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
-
+    <script src="assets/chart-master/Chart.js"></script>
+    
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
 
@@ -944,21 +1026,6 @@
 
     <!--script for this page-->
     <script src="js/sparkline-chart.js"></script>
-    <script src="js/easy-pie-chart.js"></script>
-    <script src="js/count.js"></script>
-    <script src="js/morris-script.js"></script>
-
-  <script>
-
-      //custom select box
-
-      $(function(){
-          $('select.styled').customSelect();
-          $("#ipAddress").html("IP Address: "+ myip);
-      });
-
-  </script>
-  <script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
-
+    <script src="js/diet.js"></script>
   </body>
 </html>

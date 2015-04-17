@@ -6036,3 +6036,8 @@ a.guest-on i {
 }
 
 .medical-data i{padding-right: 5px;}
+
+.pie-legend span{
+    padding:3px;
+    margin-right: 2px;
+}
