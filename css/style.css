@@ -63,6 +63,9 @@ body {
 .font-12{
     font-size: 12px;
 }
+.font-bold{
+    font-weight: bold;
+}
 
 .med-name{
     font-size: 14px;
@@ -6042,7 +6045,15 @@ a.guest-on i {
 
 .medical-data i{padding-right: 5px;}
 
-.pie-legend span{
-    padding:3px;
+.pie-legend span, .bar-legend span{
+    padding:5px;
     margin-right: 2px;
+}
+
+#createRecipeDiv label{
+    color:rgb(5, 17, 98);
+}
+
+#createRecipeDiv .panel-body{
+    background-color: rgb(249, 250, 249);
 }

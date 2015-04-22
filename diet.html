@@ -17,6 +17,9 @@
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-fileupload/bootstrap-fileupload.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+    
       <!--right slidebar-->
     <link href="css/slidebars.css" rel="stylesheet">
 
@@ -496,10 +499,10 @@
             <div class="row">
                 <div class="col-md-12 page-name">
                   <h1><i class="fa fa-cutlery"></i>Diet 
-                    <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Add Recipe</a>
+                    <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Create Goals</a>
                     <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Create Diet</a>
                     <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Diet</a>
-                    <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Create Goals</a>
+                    <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Add Recipe</a>
                   </h1>
                 </div>
             </div>
@@ -570,7 +573,7 @@
                 </div>
             </div>
             <!--Workout Summary Section ends-->
-            <!--Calories Summary and Breakdown Section starts-->
+            <!--Daily Calorie and Weight Section starts-->
             <div class="row margin-top-10">
                  <div class="col-md-6">
                     <div class="panel panel-primary user-info">
@@ -580,38 +583,82 @@
                                 </span>
                           </div>
                           <div class="panel-body">
-                             <div class="col-md-6">
-                                <canvas id="dailyCalorieSummaryPieChart" height="200" width="200"></canvas>
-                                <span id="dailyCalorieSummaryPieChartLegends"></span>
-                             </div>
-                             <div class="col-md-6">
+                                <div class="col-md-6">
+                                    <canvas id="dailyCalorieSummaryPieChart" height="217" width="200"></canvas>
+                                    <span id="dailyCalorieSummaryPieChartLegends"></span>
+                                </div>
+                                <div class="col-md-6">
                                     <table class="table table-striped">
-                                      <thead class="blue-font">
-                                      <tr>
+                                        <thead class="blue-font">
+                                        <tr>
+                                          <th></th>
+                                          <th>Total</th>
+                                          <th>Target</th>
+                                        </tr>
+                                        <tr>
                                           <th>Calories</th>
                                           <th>2134</th>
-                                      </tr>
-                                       <tr>
-                                          <th>Points</th>
-                                          <th>14</th>
-                                      </tr>
-                                      </thead>
-                                      <tbody>
-                                      <tr>
-                                          <td>Carbs</td>
-                                          <td>72 gms</td>
-                                      </tr>
-                                      <tr>
-                                          <td>Proteins</td>
-                                          <td>17 gms</td>
-                                      </tr>
-                                      <tr>
-                                          <td>Fats</td>
-                                          <td>12 gms</td>
-                                      </tr>
-                                      </tbody>
-                                  </table>
-                                 </div>
+                                          <th>2250</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                              <td>Carbs</td>
+                                              <td>72 gms</td>
+                                              <td>130 gms</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Proteins</td>
+                                              <td>17 gms</td>
+                                              <td>100 gms</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Fats</td>
+                                              <td>12 gms</td>
+                                              <td>20 gms</td>
+                                            </tr>
+                                        </tbody>
+                                  </table> 
+                                    <div class="btn-group" role="group">
+                                      <button type="button" class="btn btn-danger">Daily</button>
+                                      <button type="button" class="btn btn-danger">Weekly</button>
+                                      <button type="button" class="btn btn-danger">Monthly</button>
+                                    </div> 
+                                </div>
+                             
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="panel panel-primary user-info">
+                          <div class="panel-heading violet">Weight
+                                <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                </span>
+                          </div>
+                          <div class="panel-body">
+                             <div class="col-md-3">
+                                <canvas id="weightLineChart" height="280" width="400"></canvas>
+                             </div>
+                          </div>
+                    </div>  
+                </div>    
+            </div>
+            <!--Daily Calorie and Weight Section ends-->
+            <!--Daily Vitamins and Daily Elements Section starts-->
+            <div class="row margin-top-10">
+                 <div class="col-md-6">
+                    <div class="panel panel-primary user-info">
+                          <div class="panel-heading green">Daily Vitamins
+                                <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                </span>
+                          </div>
+                          <div class="panel-body">
+                             <div class="col-md-12">
+                                <canvas id="dailyVitaminsBarChart" height="270" width="400"></canvas>
+                                <span id="dailyVitaminsBarLegends"></span>
+                             </div>
                           </div>
                     </div>
                 </div>
@@ -625,45 +672,14 @@
                           <div class="panel-body">
                              <div class="col-md-3">
                                 <canvas id="dailyCalorieBreakdownBarChart" height="270" width="400"></canvas>
-                                <!-- <span id="pieChartLegends"></span> -->
+                                <span id="dailyElementsBarLegends"></span>
                              </div>
                           </div>
                     </div>
-                </div>    
-            </div>
-            <!--Calories Summary and Breakdown Section ends-->
-            <!--Weight and Points Section starts-->
-            <div class="row margin-top-10">
-                 <div class="col-md-6">
-                    <div class="panel panel-primary user-info">
-                          <div class="panel-heading green">Daily Vitamins
-                                <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                </span>
-                          </div>
-                          <div class="panel-body">
-                             <div class="col-md-12">
-                                <canvas id="pointsBarChart" height="200" width="400"></canvas>
-                             </div>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-primary user-info">
-                          <div class="panel-heading violet">Weight
-                                <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                </span>
-                          </div>
-                          <div class="panel-body">
-                             <div class="col-md-3">
-                                <canvas id="weightLineChart" height="200" width="400"></canvas>
-                             </div>
-                          </div>
-                    </div>
+                   
                 </div> 
             </div>
-            <!--Weight and Points Section ends-->
+            <!--Daily Vitamins and Daily Elements Section ends-->
              <!--Circular Graphs Section starts-->
             <div class="row margin-top-10">
                 <div class="col-md-3">
@@ -927,7 +943,142 @@
                 </div>
             </div>
             <!--Goal Creation Section ends-->
-              <!--Report Section Starts-->
+
+            <!--Create Recipe Section Starts-->
+             <div class="row margin-top-10" id="createRecipeDiv">
+                <div class="col-md-12">
+                   <div class="panel panel-primary">
+                    <header class="panel-heading green">
+                      Create and Save Your Recipe
+                      <span class="tools pull-right">
+                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                      </span>
+                    </header>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group col-md-4">
+                                <label for="exampleInputEmail1">RECIPE TITLE</label>
+                                <input type="email" class="form-control" id="inpRecipeTitle" placeholder="Enter Recipe Title">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="exampleInputFile">UPLOAD RECIPE PHOTO</label>
+                                 <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        <span class="btn btn-primary btn-file">
+                                        <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image to be Uploaded</span>
+                                        <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+                                        <input type="file" class="default" id="fuRecipePhoto" />
+                                        </span>
+                                          <span class="fileupload-preview" style="margin-left:5px;"></span>
+                                          <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none; margin-left:5px;"></a>
+                                </div>
+                                <p><i class="fa fa-info-circle"></i>
+                                    Please provide standard image format: PNG or JPEG
+                                </p>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="exampleInputFile">UPLOAD RECIPE VIDEO OR PROVIDE A URL</label>
+                                <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        <span class="btn btn-primary btn-file">
+                                        <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select video file to be Uploaded</span>
+                                        <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
+                                        <input type="file" class="default" id="fuRecipeVideo" />
+                                        </span>
+                                          <span class="fileupload-preview" style="margin-left:5px;"></span>
+                                          <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none; margin-left:5px;"></a>
+                                </div>
+                                 <p><i class="fa fa-info-circle"></i>
+                                    Please provide standard video format: MP4
+                                </p>
+                                <input type="input" class="form-control" id="inpRecipeVideo" placeholder="or provide a web URL for your Recipe">
+                            </div>
+                            <div class="form-group">
+                                <label>SHORT DESCRIPTION ABOUT RECIPE</label>
+                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeDesc" rows= "5" placeholder="Provide a short description about this Recipe"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>INGREDIENTS</label>
+                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeIngd" rows= "5" placeholder="Provide information about Ingreditents required to prepare this Recipe"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>DIRECTIONS</label>
+                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeDirections" rows= "5" placeholder="Provide information about Directions required to prepare this Recipe"></textarea>
+                            </div> 
+                            <div class="form-group">
+                                <label for="inpYields">YIELDS</label>
+                                <input type="text" class="form-control" id="inpYields">
+                                <p><i class="fa fa-info-circle"></i>
+                                    e.g: 4 Servings, 3 Cups, 6 Bowls etc
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <p class="font-bold">NUTRITION FACTS</p>
+                                <div class="form-group col-md-4">
+                                    <label for="inpServingSize">Serving Size</label>
+                                    <input type="text" class="form-control" id="inpServingSize">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpCalories">Calories</label>
+                                    <input type="text" class="form-control" id="inpCalories">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpTotalFat">Total Fat</label>
+                                    <input type="text" class="form-control" id="inpTotalFat">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpSatFat">Saturated Fat</label>
+                                    <input type="text" class="form-control" id="inpSatFat">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpPolyFat">Polyunsaturated Fat</label>
+                                    <input type="text" class="form-control" id="inpPolyFat">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpMonoFat">Monounsaturated Fat</label>
+                                    <input type="text" class="form-control" id="inpMonoFat">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpTransFat">Trans Fat</label>
+                                    <input type="text" class="form-control" id="inpTransFat">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpCholestrol">Cholestrol</label>
+                                    <input type="text" class="form-control" id="inpCholestrol">
+                                </div>
+                                 <div class="form-group col-md-4">
+                                    <label for="inpSodium">Sodium</label>
+                                    <input type="text" class="form-control" id="inpSodium">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inpPotassium">Potassium</label>
+                                    <input type="text" class="form-control" id="inpPotassium">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inpCarbohydrates">Total Carbohydrates</label>
+                                    <input type="text" class="form-control" id="inpCarbohydrates">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inpFiber">Fiber</label>
+                                    <input type="text" class="form-control" id="inpFiber">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inpSugar">Sugar</label>
+                                    <input type="text" class="form-control" id="inpSugar">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inpProtein">Protein</label>
+                                    <input type="text" class="form-control" id="inpProtein">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Save my recipe</button>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <!--Create Recipe Section ends-->
+            <!--Report Section Starts-->
                             <div class="col-md-12 white-bg">
                               <h2>Trends Reports</h2>
                               <p>
@@ -1052,7 +1203,7 @@
                             <!--Wt. Report Ends-->
                                </div>
                             </div>
-                        <!--Report Section Ends-->
+            <!--Report Section Ends-->
                 
           </section>
       </section>
@@ -1172,6 +1323,9 @@
     <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/moment.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
     
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
