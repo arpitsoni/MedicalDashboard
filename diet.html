@@ -27,6 +27,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" >
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -1048,12 +1049,20 @@
                                 <textarea class="wysihtml5 form-control" id="txtAreaRecipeDesc" rows= "5" placeholder="Provide a short description about this Recipe"></textarea>
                             </div>
                             <div class="form-group">
-                                <label>Pepration Time (in Minutes)</label>
-                                <input type ="range" class="form-control" id="rngPrepTime" step="5" max="240" min="5" ></input>
+                                <p>
+                                  <label for="prepTime">Pepration Time (in Minutes)</label>
+                                  <input type="text" id="prepTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                 
+                                <div id="prepTime-range-min"></div>
                             </div>
                             <div class="form-group">
-                                <label>Cooking Time (in Minutes)</label>
-                                <input type ="range" class="form-control" id="rngCookTime" step="5" max="240" min="5" value="10" ></input>
+                                <p>
+                                  <label for="cookTime">Cooking Time (in Minutes)</label>
+                                  <input type="text" id="cookTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                 
+                                <div id="cookTime-range-min"></div>
                             </div>
                             <div class="form-group">
                                 <label>INGREDIENTS</label>
@@ -1386,6 +1395,7 @@
     <script type="text/javascript" src="assets/bootstrap-fileupload/bootstrap-fileupload.js"></script>
     <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
     <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
