@@ -17,7 +17,7 @@ $sql_pass = '';
 
 
 // Site URL
-$site_url = 'http://localhost'; // You must write "http://"
+$site_url = 'http://localhost/SocialMedia'; // You must write "http://"
 
 
 // Facebook Implementation
