@@ -1,23 +1,23 @@
 <?php
 
 // MySQL Hostname / Server (for eg: 'localhost')
-$sql_host = 'DB_HOST';
+$sql_host = 'localhost';
 
 
 // MySQL Database Name
-$sql_name = 'DB_NAME';
+$sql_name = 'medical';
 
 
 // MySQL Database User
-$sql_user = 'DB_USER';
+$sql_user = 'root';
 
 
 // MySQL Database Password
-$sql_pass = 'DB_PASS';
+$sql_pass = '';
 
 
 // Site URL
-$site_url = 'http://YOURSITE.COM'; // You must write "http://"
+$site_url = 'http://localhost'; // You must write "http://"
 
 
 // Facebook Implementation

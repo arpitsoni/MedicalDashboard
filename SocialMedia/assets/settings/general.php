@@ -1,7 +1,7 @@
 <?php
 $config['friends'] = false;
-$config['site_name'] = 'Sitename';
-$config['site_title'] = 'Site Title';
+$config['site_name'] = 'Medical Social Network';
+$config['site_title'] = 'Medical Social Network';
 $config['email'] = 'no-reply@website.com';
 $config['email_verification'] = false;
 $config['chat'] = true;
