@@ -36,6 +36,7 @@ session_start();
 
       <form class="form-signin login-form"  method="post">
         <h2 class="form-signin-heading">sign in now</h2>
+          <div class="post-message"></div>
         <div class="login-wrap">
             <input name="login_id" type="text" class="form-control" placeholder="User ID" autofocus>
             <input name="login_password" type="password" class="form-control" placeholder="Password">
@@ -63,33 +64,36 @@ session_start();
                     Create an account
                 </a>
             </div>
-
         </div>
-
-          <!-- Modal -->
-          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-              <div class="modal-dialog">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h4 class="modal-title">Forgot Password ?</h4>
-                      </div>
-                      <div class="modal-body">
-                          <p>Enter your e-mail address below to reset your password.</p>
-                          <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
-
-                      </div>
-                      <div class="modal-footer">
-                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                          <button class="btn btn-success" type="button">Submit</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- modal -->
-
       </form>
 
+
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Forgot Password ?</h4>
+
+                    </div>
+                    <div class="modal-body">
+                        <form class="forgotpass-form"  method="post">
+                            <div  class="post-message "></div>
+                            <p>Enter your e-mail address below to reset your password.</p>
+                            <input type="text" name="forgotpass_id" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+                            <div class="clear"></div>
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                            <button class="btn btn-success submit-btn" >Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
     </div>
 
 
@@ -98,8 +102,38 @@ session_start();
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.form.min.js"></script>
+    <script src="js/welcome.js"></script>
     <script>
         $(document).ready(function($){
+            console.log("ready",$('.forgotpass-form'))
+            $('.forgotpass-form').ajaxForm({
+                url: SK_source() + '?t=forgot_password',
+
+                beforeSend: function() {
+                    forgotpass_form = $('.forgotpass-form');
+                    forgotpass_button = forgotpass_form.find('.submit-btn');
+                    forgotpass_button.attr('disabled', true);
+                    forgotpass_form.find('.post-message').fadeOut('fast');
+                    //SK_progressIconLoader(forgotpass_button);
+                },
+
+                success: function(responseText) {
+                    forgotpass_button.attr('disabled', false);
+
+                    if (forgotpass_form.find('.post-message').length == 0) {
+                        forgotpass_form
+                            .find('.form-header')
+                            .after('<div class="post-message hidden">' + responseText.message + '</div>')
+                            .end().find('.post-message')
+                            .fadeIn('fast');
+                    } else {
+                        forgotpass_form.find('.post-message').html(responseText.message).fadeIn('fast');
+                    }
+
+                    //SK_progressIconLoader(forgotpass_button);
+                }
+            });
+
             $('.login-form').ajaxForm({
                 url: SK_source() + '?t=login',
 
@@ -141,6 +175,42 @@ session_start();
         console.log("SKS:"+SK_source())
         console.log("SKS:"+SK_source())
 
+
+        $('.passwordreset-form').ajaxForm({
+            url: SK_source() + '?t=reset_password',
+
+            beforeSend: function() {
+                passwordreset_form = $('.passwordreset-form');
+                passwordreset_button = passwordreset_form.find('.submit-btn');
+                passwordreset_button.attr('disabled', true);
+                //SK_progressIconLoader(passwordreset_button);
+            },
+
+            success: function(responseText) {
+
+                if (responseText.status == 200) {
+                    passwordreset_form.find('.form-header').after('<div class="post-message hidden">Successful! Please log in with your new password.</div>');
+                    passwordreset_form.find('.post-message').fadeIn('fast',function () {
+                        $(this).fadeOut(4000, function() {
+                            $(this).remove();
+                            window.location = responseText.url;
+                        });
+                    });
+                }
+                else {
+                    passwordreset_button.attr('disabled', false);
+
+                    passwordreset_form.find('.form-header').after('<div class="post-message hidden">Something went wrong! Please try again.</div>');
+                    passwordreset_form.find('.post-message').fadeIn('fast',function () {
+                        $(this).fadeOut(4000, function() {
+                            $(this).remove();
+                        });
+                    });
+                }
+
+                //SK_progressIconLoader(passwordreset_button);
+            }
+        });
 
     </script>
 
