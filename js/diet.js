@@ -75,22 +75,22 @@ var DietScript = function () {
     //Code to display Workout SUmmary Pie chart information
     var pieDailyCalorieSummaryData = [
         {
-        value: 24,
+        value: 74,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "Road Cycling"
+        label: "Carbs"
     },
     {
-        value: 13,
+        value: 17,
         color: "#46BFBD",
         highlight: "#5AD3D1",
-        label: "Walking"
+        label: "Proteins"
     },
     {
-        value: 3,
+        value: 12,
         color: "#FDB45C",
         highlight: "#FFC870",
-        label: "Commuting"
+        label: "Fats"
     }
 
     ];
