@@ -502,8 +502,8 @@
 
                   <h1><i class="fa fa-cutlery"></i>Diet  
                     <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Create Goals</a>
-                    <a href="#createDietGoalDiv" class="btn btn-md btn-primary">Create Diet</a>
-                    <a href="#createDietGoalDiv" class="btn btn-md btn-primary">View Diet</a>
+                    <a href="create_diet.html" class="btn btn-md btn-primary">Create Diet</a>
+                    <a href="view_diet.html" class="btn btn-md btn-primary">View Diet</a>
                     <a href="add_recipe.html" class="btn btn-md btn-primary">Add Recipe</a>
                   </h1>
                 </div>
@@ -783,7 +783,7 @@
                     </header>
                     <div class="panel-body">
                         <form>
-                           <div class="form-group">
+                            <div class="form-group" id="goalSection">
                                 <label>What are your Primary Goals?</label>
                                 <div class="checkbox">
                                     <label>
@@ -840,68 +840,90 @@
                                       <input type="checkbox"> Functioning
                                     </label>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="btn btn-primary" id="btnNxtPrimaryGoal">Next
+                                        </a>
+                                    </div>
+                                </div>
                             </div> 
-                          <div class="form-group">
-                            <label>How would you describe your lifestyle?</label>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                                Little to no excercise each week
-                              </label>
+                            <div class="form-group" id="lifestyleSection">
+                                <label>How would you describe your lifestyle?</label>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                    Little to no excercise each week
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Little exercise 1-3 days a week
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                    Moderate exercise sports 3-5 times a week
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                    Very active sports/workout 6-7 times a week
+                                  </label>
+                                </div>
+                                 <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                    Extremely active physically demanding job/sports/workout
+                                  </label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="btn btn-warning" id="btnPreLifestyle">Previous
+                                        </a>
+                                        <a class="btn btn-primary" id="btnNxtLifestyle">Next
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Little exercise 1-3 days a week
-                              </label>
+                            <div class="form-group" id="weightSection">
+                                <label>How would you describe the way you gain or loose weight?</label>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                    I find it hard to gain weight even after a lot of meal
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    I find it easy to gain or lose weight by adjusting calories
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                    I find it very difficult to loose weight
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                    I find even eating small meals I gain weight
+                                  </label>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="btn btn-warning" id="btnPreWeight">Previous
+                                        </a>
+                                        <a class="btn btn-primary" id="btnNxtWeight">Next
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                Moderate exercise sports 3-5 times a week
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                Very active sports/workout 6-7 times a week
-                              </label>
-                            </div>
-                             <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                Extremely active physically demanding job/sports/workout
-                              </label>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label>How would you describe the way you gain or loose weight?</label>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                                I find it hard to gain weight even after a lot of meal
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                I find it easy to gain or lose weight by adjusting calories
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                I find it very difficult to loose weight
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                I find even eating small meals I gain weight
-                              </label>
-                            </div>
-                          </div>
-                            <div class="form-group">
+                            <div class="form-group" id="diseaseSection">
                                 <label>Do you have any of the following conditions?</label>
                                 <div class="checkbox">
                                     <label>
@@ -958,8 +980,15 @@
                                       <input type="checkbox"> Hypoglycemia
                                     </label>
                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="btn btn-warning" id="btnPreDisease">Previous
+                                        </a>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                    </div>
+                                </div>
                             </div> 
-                          <button type="submit" class="btn btn-default">Submit</button>
+                          
                         </form>
                     </div>
                    </div>
@@ -967,207 +996,7 @@
             </div>
             <!--Goal Creation Section ends-->
 
-            <!--Create Recipe Section Starts-->
-             <div class="row margin-top-10" id="createRecipeDiv">
-                <div class="col-md-12">
-                   <div class="panel panel-primary">
-                    <header class="panel-heading green">
-                      Create and Save Your Recipe
-                      <span class="tools pull-right">
-                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                      </span>
-                    </header>
-                    <div class="panel-body">
-                        <form>
-                            <div class="form-group col-md-4">
-                                <label for="exampleInputEmail1">RECIPE TITLE</label>
-                                <input type="email" class="form-control" id="inpRecipeTitle" placeholder="Enter Recipe Title">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="exampleInputFile">UPLOAD RECIPE PHOTO</label>
-                                 <div class="fileupload fileupload-new" data-provides="fileupload">
-                                        <span class="btn btn-primary btn-file">
-                                        <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image to be Uploaded</span>
-                                        <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
-                                        <input type="file" class="default" id="fuRecipePhoto" />
-                                        </span>
-                                          <span class="fileupload-preview" style="margin-left:5px;"></span>
-                                          <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none; margin-left:5px;"></a>
-                                </div>
-                                <p><i class="fa fa-info-circle"></i>
-                                    Please provide standard image format: PNG or JPEG
-                                </p>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="exampleInputFile">UPLOAD RECIPE VIDEO OR PROVIDE A URL</label>
-                                <div class="fileupload fileupload-new" data-provides="fileupload">
-                                        <span class="btn btn-primary btn-file">
-                                        <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select Recipe video</span>
-                                        <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
-                                        <input type="file" class="default" id="fuRecipeVideo" />
-                                        </span>
-                                          <span class="fileupload-preview" style="margin-left:5px;"></span>
-                                          <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none; margin-left:5px;"></a>
-                                </div>
-                                 <p><i class="fa fa-info-circle"></i>
-                                    Please provide standard video format: MP4
-                                </p>
-                                <input type="input" class="form-control" id="inpRecipeVideo" placeholder="or provide a web URL for your Recipe">
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Recipe in Category..</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Diet Type...</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Medical Diet..</option>
-                                  </select>
-                                </div>
-                            </div>
-                             <div class="form-group">
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Sort Recipes by...</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Health Improvement Diet...</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Mood Improvement...</option>
-                                  </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Recipe Cooking Method...</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Recipe Cooking Method...</option>
-                                  </select>
-                                </div>
-                                <div class="col-sm-4">
-                                  <select class="form-control m-bot15">
-                                    <option>Recipe Cooking Method...</option>
-                                  </select>
-                                </div>
-                            </div>  
-                            <div class="form-group">
-                                <label>SHORT DESCRIPTION ABOUT RECIPE</label>
-                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeDesc" rows= "5" placeholder="Provide a short description about this Recipe"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <p>
-                                  <label for="prepTime">Pepration Time (in Minutes)</label>
-                                  <input type="text" id="prepTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                </p>
-                                 
-                                <div id="prepTime-range-min"></div>
-                            </div>
-                            <div class="form-group">
-                                <p>
-                                  <label for="cookTime">Cooking Time (in Minutes)</label>
-                                  <input type="text" id="cookTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                </p>
-                                 
-                                <div id="cookTime-range-min"></div>
-                            </div>
-                            <div class="form-group">
-                                <label>INGREDIENTS</label>
-                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeIngd" rows= "5" placeholder="Provide information about Ingreditents required to prepare this Recipe"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label>DIRECTIONS</label>
-                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeDirections" rows= "5" placeholder="Provide information about Directions required to prepare this Recipe"></textarea>
-                            </div> 
-                            <div class="form-group">
-                                <label for="inpYields">YIELDS</label>
-                                <input type="text" class="form-control" id="inpYields">
-                                <p><i class="fa fa-info-circle"></i>
-                                    e.g: 4 Servings, 3 Cups, 6 Bowls etc
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <p class="font-bold">NUTRITION FACTS</p>
-                                <div class="form-group col-md-4">
-                                    <label for="inpServingSize">Serving Size</label>
-                                    <input type="text" class="form-control" id="inpServingSize">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpCalories">Calories</label>
-                                    <input type="text" class="form-control" id="inpCalories">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpTotalFat">Total Fat</label>
-                                    <input type="text" class="form-control" id="inpTotalFat">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpSatFat">Saturated Fat</label>
-                                    <input type="text" class="form-control" id="inpSatFat">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpPolyFat">Polyunsaturated Fat</label>
-                                    <input type="text" class="form-control" id="inpPolyFat">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpMonoFat">Monounsaturated Fat</label>
-                                    <input type="text" class="form-control" id="inpMonoFat">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpTransFat">Trans Fat</label>
-                                    <input type="text" class="form-control" id="inpTransFat">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpCholestrol">Cholestrol</label>
-                                    <input type="text" class="form-control" id="inpCholestrol">
-                                </div>
-                                 <div class="form-group col-md-4">
-                                    <label for="inpSodium">Sodium</label>
-                                    <input type="text" class="form-control" id="inpSodium">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inpPotassium">Potassium</label>
-                                    <input type="text" class="form-control" id="inpPotassium">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inpCarbohydrates">Total Carbohydrates</label>
-                                    <input type="text" class="form-control" id="inpCarbohydrates">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inpFiber">Fiber</label>
-                                    <input type="text" class="form-control" id="inpFiber">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inpSugar">Sugar</label>
-                                    <input type="text" class="form-control" id="inpSugar">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inpProtein">Protein</label>
-                                    <input type="text" class="form-control" id="inpProtein">
-                                </div>
-                            </div>
-                        </form>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary">Save my recipe</button>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-            </div>
-            <!--Create Recipe Section ends-->
+            
             <!--Report Section Starts-->
                             <div class="col-md-12 white-bg">
                               <h2>Trends Reports</h2>
