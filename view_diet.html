@@ -15,6 +15,7 @@
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker-bs3.css" />
     
       <!--right slidebar-->
     <link href="css/slidebars.css" rel="stylesheet">
@@ -475,12 +476,29 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper state-overview">
+
+            <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label col-md-3">View Meals on the basis of Date</label>
+                  <i class="fa fa-info-circle">By default daily meals summary will be displayed</i>
+                  <div class="col-md-12">
+                      <div class="input-group input-large" data-date="13/07/2013" data-date-format="mm/dd/yyyy">
+                          <input type="text" placeholder="Date From" class="form-control dpd1" name="from">
+                          <span class="input-group-addon">To</span>
+                          <input type="text" placeholder="Date To" class="form-control dpd2" name="to">
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <button class="btn btn-primary btn-md margin-top-10 center-block" data-toggle="modal" data-target="#reportModal">Get Meal Summary</button>
+                  </div>
+                </div>
+            </div>
             <!--Create Recipe Section Starts-->
             <div class="row margin-top-10" id="createRecipeDiv">
                 <div class="col-md-12">
                    <div class="panel panel-primary">
                     <header class="panel-heading">
-                      Daily Meal Status
+                      My Meal Summary
                       <span class="tools pull-right">
                         <a href="create_diet.html" class="btn btn-success btn-sm">Create Diet</a>
                         <a href="diet.html" class="btn btn-success btn-sm">View Goal</a>
@@ -530,6 +548,11 @@
                                             <td class="blue-font">20 gms</td>
                                         </tr>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-danger">Remove this meal! I don't want to take this</button>
+                                        </div>
+                                    </div>
                                   </td>
                                   <td>
                                     <div class="switch switch-square"
@@ -570,6 +593,11 @@
                                             <td class="blue-font">20 gms</td>
                                         </tr>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-danger">Remove this meal! I don't want to take this</button>
+                                        </div>
+                                    </div>
                                   </td>
                                   <td>
                                     <div class="switch switch-square"
@@ -610,6 +638,11 @@
                                             <td class="blue-font">20 gms</td>
                                         </tr>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-danger">Remove this meal! I don't want to take this</button>
+                                        </div>
+                                    </div>
                                   </td>
                                   <td>
                                     <div class="switch switch-square"
@@ -650,6 +683,11 @@
                                             <td class="blue-font">20 gms</td>
                                         </tr>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-danger">Remove this meal! I don't want to take this</button>
+                                        </div>
+                                    </div>
                                   </td>
                                   <td>
                                     <div class="switch switch-square"
@@ -690,6 +728,11 @@
                                             <td class="blue-font">20 gms</td>
                                         </tr>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-danger">Remove this meal! I don't want to take this</button>
+                                        </div>
+                                    </div>
                                   </td>
                                   <td>
                                     <div class="switch switch-square"
@@ -730,6 +773,11 @@
                                             <td class="blue-font">20 gms</td>
                                         </tr>
                                     </table>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-danger">Remove this meal! I don't want to take this</button>
+                                        </div>
+                                    </div>
                                   </td>
                                   <td>
                                     <div class="switch switch-square"
@@ -860,6 +908,9 @@
     <script src="js/jquery.sparkline.js" type="text/javascript"></script>
     <script src="js/jquery.customSelect.min.js" ></script>
     <script src="js/respond.min.js" ></script>
+    <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
     
     <!--custom switch-->
     <script src="js/bootstrap-switch.js"></script>
@@ -872,6 +923,7 @@
 
     <!--script for this page-->
     <script src="js/sparkline-chart.js"></script>
+    <script src="js/view_diet.js"></script>
     
   </body>
 </html>
