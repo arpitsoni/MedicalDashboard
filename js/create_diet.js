@@ -132,3 +132,44 @@ var DietScript = function () {
     $("#dailyVitaminsBarLegends").html(dailyVitaminsBarChart.generateLegend());
 
 }();
+
+
+//Creating Diet List
+
+function createDiet(obj){
+
+    if(obj)
+    {   
+        //getting parent row of selected checkbox
+        var dietRow = obj.parentElement.parentNode;
+
+        //creating delete button element
+        var deleteButton = "<button class='btn btn-danger btn-sm pull-right' onclick='deleteDietList(this)'><i class='fa fa-trash-o'></i></button>";
+
+        //getting parent td of checkbox
+        var td = obj.parentElement;
+
+        //adding delete button to td
+        $(td).html(deleteButton);
+
+        //removing checkbox
+        obj.remove();
+
+        //appending final row with delete button added and checkbox removed to the diet list
+        $("#tblListDiets").append(dietRow);
+    }
+}
+
+//Delete Diet List
+
+function deleteDietList(obj){
+    if(obj)
+    {   
+        //getting parent row of selected checkbox
+        var dietRow = obj.parentElement.parentNode;
+
+        //removing row
+        dietRow.remove();
+    }
+}
+

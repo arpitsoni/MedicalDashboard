@@ -37,6 +37,10 @@ body {
     color: #000000;
 }
 
+.form-pink{
+    background-color: rgba(252, 245, 245, 0.42);
+}
+
 .margin-top-5 {
     margin-top: 5px;
 }
