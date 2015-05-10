@@ -387,11 +387,17 @@
                       
                   </li>
 
-                  <li>
-                      <a class="active" href="diet.html" >
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="active">
                           <i class="fa fa-cutlery"></i>
                           <span>Diet</span>
                       </a>
+                        <ul class="sub">
+                            <li class="active"><a  href="diet.html">Summary</a></li>
+                            <li><a  href="create_diet.html">Create Diet</a></li>
+                            <li><a  href="view_diet.html">View Diet</a></li>
+                            <li><a  href="add_recipe.html">Add Recipe</a></li>
+                        </ul>
                       
                   </li>
 
@@ -569,6 +575,15 @@
                                       </tr>
                                       </tbody>
                                   </table>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="btn-group" role="group">
+                                          <button type="button" class="btn btn-danger btn-sm">Daily</button>
+                                          <button type="button" class="btn btn-danger btn-sm">Weekly</button>
+                                          <button type="button" class="btn btn-danger btn-sm">Monthly</button>
+                                        </div> 
+                                    </div>
+                                   </div> 
                                  </div>
                               </div>
                     </div>
@@ -586,7 +601,7 @@
                           </div>
                           <div class="panel-body">
                                 <div class="col-md-6">
-                                    <canvas id="dailyCalorieSummaryPieChart" height="217" width="200"></canvas>
+                                    <canvas id="dailyCalorieSummaryPieChart" height="265" width="240"></canvas>
                                     <span id="dailyCalorieSummaryPieChartLegends"></span>
                                 </div>
                                 <div class="col-md-6">
@@ -621,11 +636,15 @@
                                             </tr>
                                         </tbody>
                                   </table> 
-                                    <div class="btn-group" role="group">
-                                      <button type="button" class="btn btn-danger btn-sm">Daily</button>
-                                      <button type="button" class="btn btn-danger btn-sm">Weekly</button>
-                                      <button type="button" class="btn btn-danger btn-sm">Monthly</button>
-                                    </div> 
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="btn-group" role="group">
+                                          <button type="button" class="btn btn-danger btn-sm">Daily</button>
+                                          <button type="button" class="btn btn-danger btn-sm">Weekly</button>
+                                          <button type="button" class="btn btn-danger btn-sm">Monthly</button>
+                                        </div> 
+                                    </div>
+                                   </div> 
                                 </div>
                              
                           </div>
@@ -644,7 +663,9 @@
                                     <canvas id="weightLineChart" height="280" width="400"></canvas>
                                 </div>
                             </div>  
-                            <div class="row">
+                            
+                          </div>
+                          <div class="row">
                                 <div class="col-md-6">
                                     <div class="btn-group center-block" role="group">
                                       <button type="button" class="btn btn-danger btn-sm">Daily</button>
@@ -663,7 +684,6 @@
                                     </div>
                                 </div>
                             </div>
-                          </div>
                     </div>  
                 </div>    
             </div>
@@ -683,6 +703,15 @@
                                 <span id="dailyVitaminsBarLegends"></span>
                              </div>
                           </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                                <div class="btn-group center-block" role="group">
+                                  <button type="button" class="btn btn-danger btn-sm">Daily</button>
+                                  <button type="button" class="btn btn-danger btn-sm">Weekly</button>
+                                  <button type="button" class="btn btn-danger btn-sm">Monthly</button>
+                                </div> 
+                            </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -698,6 +727,15 @@
                                 <span id="dailyElementsBarLegends"></span>
                              </div>
                           </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                                <div class="btn-group center-block" role="group">
+                                  <button type="button" class="btn btn-danger btn-sm">Daily</button>
+                                  <button type="button" class="btn btn-danger btn-sm">Weekly</button>
+                                  <button type="button" class="btn btn-danger btn-sm">Monthly</button>
+                                </div> 
+                            </div>
+                        </div> 
                     </div>
                    
                 </div> 

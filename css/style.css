@@ -38,7 +38,7 @@ body {
 }
 
 .form-pink{
-    background-color: rgba(252, 245, 245, 0.42);
+    background-color: rgba(245, 11, 11, 0.57);
 }
 
 .margin-top-5 {
@@ -56,6 +56,10 @@ body {
 .pad20 {
     padding-top: 20px;
 }
+.padding-bottom-20{
+    padding-bottom: 20px;
+}
+
 .tab-content {
     margin-top: 1px;
 }
@@ -380,7 +384,7 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #222732;
+    background: #35404d;
     color: #fff;
     display: block;
    /* border-radius: 4px;

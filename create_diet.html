@@ -37,6 +37,86 @@
   <body>
 
   <section id="container" >
+
+    <!--Diet Modal box starts-->
+    <div class="modal fade" role="dialog" id="dietModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Detailed Diet Information</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                     <img src="img/food.jpg" class="center-block"/>
+                     <h1 class="text-center green-font ">Grilled Tuna Salad</h1>
+                </div>
+            </div>
+             <div class="row">
+                  <table class="table" id="tblAvailableDiets">
+                        <thead>
+                        <tr>
+                            <th>Meal Rating</th>
+                            <th>Carbs</th>
+                            <th>Proteins</th>
+                            <th>Fats</th>
+                            <th>Category</th>
+                            <th>Cuisine</th>
+                            <th>Methods</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="info blue-font">
+                              <td>
+                                5 Star
+                              </td>
+                              <td>
+                                72 Gms
+                              </td>
+                              <td>
+                                17 Gms
+                              </td>
+                              <td>
+                                100 Gms
+                              </td>
+                               <td>
+                                Salads
+                              </td>
+                              <td>
+                                Asian
+                              </td>
+                              <td>
+                                Abc, xyz
+                              </td>
+                            </tr>
+                        </tbody>
+                  </table>  
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                     <div class="panel panel-primary">
+                            <header class="panel-heading text-center">
+                              Diet Description
+                              <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                              </span>
+                            </header>
+                        <div class="panel-body">
+                            Loreum ipsium dipsuim Loreum ipsium dipsuim Loreum ipsium dipsuim Loreum ipsium dipsuim
+
+                        </div>
+                        </div>
+                </div>
+            </div>    
+          </div>
+          
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!--Diet Modal box starts-->
+
+
       <!--header start-->
       <header class="header white-bg">
               <div class="sidebar-toggle-box">
@@ -367,11 +447,17 @@
                       
                   </li>
 
-                  <li>
-                      <a class="active" href="diet.html" >
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="active">
                           <i class="fa fa-cutlery"></i>
                           <span>Diet</span>
                       </a>
+                        <ul class="sub">
+                            <li><a  href="diet.html">Summary</a></li>
+                            <li class="active"><a  href="create_diet.html">Create Diet</a></li>
+                            <li><a  href="view_diet.html">View Diet</a></li>
+                            <li><a  href="add_recipe.html">Add Recipe</a></li>
+                        </ul>
                       
                   </li>
 
@@ -486,7 +572,7 @@
                               <button type="button" class="btn btn-warning btn-sm">View Weekly Diet Analysis</button>
                               <button type="button" class="btn btn-danger btn-sm">View Monthly Diet Analysis</button>
                             </div> 
-                            <a href="#" class="btn btn-primary btn-sm">Create My Diet</a>
+                            <a href="#dietListSection" class="btn btn-primary btn-sm">Create My Diet</a>
                         </h1>
 
                     </div>
@@ -590,7 +676,7 @@
                     </div>
                 </div>
 
-                <div class="row form-pink">
+                <div class="row form-pink padding-bottom-20">
                     <div class="col-md-12">
                          <form>
                             <div class="form-group">
@@ -649,7 +735,7 @@
                 <!--Diet search section ends-->
 
                 <!--Diet Drop section starts-->
-                <div class="row margin-top-10">
+                <div class="row margin-top-10" id="dietListSection">
 
                     <!--List of available recipes-->
                     <div class="col-md-6">
@@ -672,7 +758,10 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
+                                      <td>
+                                        <img src="img/food.jpg" style="width: 100px;"/>
+                                        <button class="btn btn-success btn-xs center-block" data-toggle="modal" data-target="#dietModal">View More Info</button>
+                                      </td>
                                       <td>
                                         <h4 class="green-font ">Grilled Tuna Salad</h4>
                                         <p>Category: <i class="blue-font">Salads</i></p>
@@ -704,13 +793,20 @@
                                         </table>
                                       </td>
                                       <td>
-                                        <input type="checkbox" id="chkDiet" onclick="createDiet(this)"/>
+                                        <!-- <input type="checkbox" id="chkDiet" onclick="createDiet(this)"/> -->
+                                        <button class="btn btn-success btn-sm pull-right " onclick="createDiet(this)" data-toggle="tooltip" data-placement="top" title="Click to Add this diet in your diet list">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
                                       </td>
+
                                         </tr>
                                         <tr>
-                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
                                       <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <img src="img/food.jpg" style="width: 100px;"/>
+                                        <button class="btn btn-success btn-xs center-block" data-toggle="modal" data-target="#dietModal">View More Info</button>
+                                      </td>
+                                      <td>
+                                        <h4 class="green-font ">Kale Salad with Pinenuts</h4>
                                         <p>Category: <i class="blue-font">Salads</i></p>
                                         <p>Cuisine: <i class="blue-font">Asian</i></p>
                                         <p>Method: <i class="blue-font">abc, xyz</i></p>
@@ -740,7 +836,10 @@
                                         </table>
                                       </td>
                                       <td>
-                                        <input type="checkbox" onclick="createDiet(this)"/>
+                                        <!-- <input type="checkbox" onclick="createDiet(this)"/> -->
+                                        <button class="btn btn-success btn-sm pull-right " onclick="createDiet(this)" data-toggle="tooltip" data-placement="top" title="Click to Add this diet in your diet list">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
                                       </td>
                                         </tr>
                                     </tbody>
@@ -770,9 +869,12 @@
                                   </thead>
                                   <tbody>
                                   <tr>
-                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
+                                    <td>
+                                    <img src="img/food.jpg" style="width: 100px;"/>
+                                    <button class="btn btn-success btn-xs center-block" data-toggle="modal" data-target="#dietModal">View More Info</button>
+                                    </td>
                                       <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <h4 class="green-font ">Toasted Hazelnuts Salad</h4>
                                         <p>Category: <i class="blue-font">Salads</i></p>
                                         <p>Cuisine: <i class="blue-font">Asian</i></p>
                                         <p>Method: <i class="blue-font">abc, xyz</i></p>
@@ -802,15 +904,17 @@
                                         </table>
                                       </td>
                                       <td>
-                                        <button class="btn btn-danger btn-sm pull-right" onclick="deleteDietList(this)">
+                                        <button class="btn btn-danger btn-sm pull-right " onclick="deleteDietList(this)" data-toggle="tooltip" data-placement="top" title="Click to Delete this diet from your diet list">
                                             <i class="fa fa-trash-o"></i>
                                         </button>
                                       </td>
                                   </tr>
                                    <tr>
-                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
+                                      <td><img src="img/food.jpg" style="width: 100px;"/>
+                                    <button class="btn btn-success btn-xs center-block" data-toggle="modal" data-target="#dietModal">View More Info</button>
+                                    </td>
                                       <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <h4 class="green-font ">Spinach Salad</h4>
                                         <p>Category: <i class="blue-font">Salads</i></p>
                                         <p>Cuisine: <i class="blue-font">Asian</i></p>
                                         <p>Method: <i class="blue-font">abc, xyz</i></p>
@@ -840,7 +944,7 @@
                                         </table>
                                       </td>
                                       <td>
-                                        <button class="btn btn-danger btn-sm pull-right" onclick="deleteDietList(this)">
+                                        <button class="btn btn-danger btn-sm pull-right " onclick="deleteDietList(this)" data-toggle="tooltip" data-placement="top" title="Click to Delete this diet from your diet list">
                                             <i class="fa fa-trash-o"></i>
                                         </button>
                                       </td>

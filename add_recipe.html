@@ -385,11 +385,17 @@
                       
                   </li>
 
-                  <li>
-                      <a class="active" href="diet.html" >
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="active">
                           <i class="fa fa-cutlery"></i>
                           <span>Diet</span>
                       </a>
+                        <ul class="sub">
+                            <li><a  href="diet.html">Summary</a></li>
+                            <li><a  href="create_diet.html">Create Diet</a></li>
+                            <li><a  href="view_diet.html">View Diet</a></li>
+                            <li class="active"><a  href="add_recipe.html">Add Recipe</a></li>
+                        </ul>
                       
                   </li>
 
@@ -497,7 +503,8 @@
             
             <!--Create Recipe Section Starts-->
             <div class="row margin-top-10" id="createRecipeDiv">
-                <div class="col-md-12">
+                <div class="col-md-12 page-name">
+                    <h1><i class="fa fa-cutlery"></i>Add Recipe</h1>
                    <div class="panel panel-primary">
                     <header class="panel-heading">
                       Create and Save My Recipe
@@ -601,20 +608,24 @@
                                 <textarea class="wysihtml5 form-control" id="txtAreaRecipeDesc" rows= "5" placeholder="Provide a short description about this Recipe"></textarea>
                             </div>
                             <div class="form-group">
-                                <p>
-                                  <label for="prepTime">Pepration Time (in Minutes)</label>
-                                  <input type="text" id="prepTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                </p>
-                                 
-                                <div id="prepTime-range-min"></div>
-                            </div>
-                            <div class="form-group">
-                                <p>
-                                  <label for="cookTime">Cooking Time (in Minutes)</label>
-                                  <input type="text" id="cookTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                </p>
-                                 
-                                <div id="cookTime-range-min"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>
+                                          <label for="prepTime">Pepration Time (in Minutes)</label>
+                                          <input type="text" id="prepTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                        </p>
+                                         
+                                        <div id="prepTime-range-min"></div>
+                                     </div>
+                                     <div class="col-md-6">
+                                        <p>
+                                          <label for="cookTime">Cooking Time (in Minutes)</label>
+                                          <input type="text" id="cookTime" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                        </p>
+                                         
+                                        <div id="cookTime-range-min"></div>
+                                     </div>
+                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>INGREDIENTS</label>

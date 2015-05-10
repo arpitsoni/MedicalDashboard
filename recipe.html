@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Arpit Soni">
-    <meta name="keyword" content="Medical Dashboard">
+    <meta name="keyword" content="Create Diet">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Bluetooth Device Dashboard</title>
+    <title>Create Diet</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,18 +16,16 @@
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="assets/morris.js-0.4.3/morris.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/owl.carousel.css" type="text/css"> -->
-
+    <link rel="stylesheet" type="text/css" href="assets/jquery-multi-select/css/multi-select.css" />
+    
       <!--right slidebar-->
     <link href="css/slidebars.css" rel="stylesheet">
 
-    <!-- Custom styles for index page -->
+    <!-- Custom styles for this page -->
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
     <link href="css/style-responsive.css" rel="stylesheet" />
-
-
+    <link href="css/jquery-ui.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
@@ -355,7 +353,7 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
                   <li>
-                      <a class="active" href="index.html">
+                      <a href="index.html">
                           <i class="fa fa-dashboard"></i>
                           <span>Dashboard</span>
                       </a>
@@ -380,7 +378,7 @@
                             <li><a  href="view_diet.html">View Diet</a></li>
                             <li><a  href="add_recipe.html">Add Recipe</a></li>
                         </ul>
-                  </li>
+                      
                   </li>
 
                   <li>
@@ -426,7 +424,7 @@
                      
                   </li>
                   <li>
-                      <a href="#" >
+                      <a href="recipe.html" class="active">
                           <i class="fa fa-map-marker"></i>
                           <span>Recipes</span>
                       </a>
@@ -483,348 +481,386 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">
+            <section class="wrapper state-overview">
               <!--Page Name-->
-              <div class="row">
-                <div class="col-md-12 page-name">
-                  
-                  <h1><i class="fa fa-dashboard"></i>Dashboard</h1>
+                <div class="row">
+                    <div class="col-md-12 page-name">
+
+                        <h1><i class="fa fa-cutlery"></i>View Available 
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-success btn-sm">View Daily Diet Analysis</button>
+                              <button type="button" class="btn btn-warning btn-sm">View Weekly Diet Analysis</button>
+                              <button type="button" class="btn btn-danger btn-sm">View Monthly Diet Analysis</button>
+                            </div> 
+                            <a href="#" class="btn btn-primary btn-sm">Create My Diet</a>
+                        </h1>
+
+                    </div>
                 </div>
-              </div>
-              <!--state overview start-->
-              <div class="row state-overview margin-top-10">
-                <!--Icons Section Starts-->
-                <div class="col-md-6">
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol pink" href="medical_data.html">
-                              <i class="fa fa-user-md"></i>
-                              <p>Medical Data</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol violet" href="diet.html">
-                              <i class="fa fa-cutlery"></i>
-                               <p>Diet</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol orange" href="workout.html">
-                              <i class="fa fa-cogs"></i>
-                               <p>Workout</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol blue" target="_blank" href="http://creative.aargss.com/SocialMedia/">
-                              <i class="fa fa-user"></i>
-                               <p>Social</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol yellow" href="journals.html">
-                              <i class="fa fa-th"></i>
-                              <p>Journals</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol orange" href="#">
-                              <i class="fa fa-leanpub"></i>
-                               <p>Learn</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol green" href="#">
-                              <i class="fa fa-video-camera"></i>
-                               <p>Video</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol red" href="symptom_checker.html">
-                              <i class="fa fa-bar-chart-o"></i>
-                               <p>Symptom Checker</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol terques" href="#">
-                              <i class="fa fa-user"></i>
-                              <p>Recipes</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol green" href="print_card.html">
-                              <i class="fa fa-print"></i>
-                               <p>Print Card</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol blue" href="email_doc.html">
-                              <i class="fa fa-envelope-o"></i>
-                               <p>Email Doctor</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol terques" href="">
-                              <i class="fa fa-archive"></i>
-                               <p>Store</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                   <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol violet" href="mental_health.html">
-                              <i class="fa fa-user"></i>
-                              <p>Mental Health</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol yellow" href="">
-                              <i class="fa fa-tags"></i>
-                               <p>Coaching</p>
-                          </a>
-                         
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol red" href="literature.html">
-                              <i class="fa fa-shopping-cart"></i>
-                              <p>Literature</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                      <section class="panel">
-                          <a class="symbol pink" href="entertainment.html">
-                              <i class="fa fa-bar-chart-o"></i>
-                               <p>Entertainment</p>
-                          </a>
-                          
-                      </section>
-                  </div>
-                  <div class="col-md-6">   
-                        <section class="panel panel-info">
-                              <div class="weather-bg">
-                                <div class="panel-heading">
-                                     <h3 class="panel-title">Software Information</h3>
-                                </div>
-                                  <div class="panel-body">
-                                      <div class="row">
-                                          <ul>
-                                            <li><span>Version:</span><span>1234567</span></li>
-                                            <li><span>Description:</span><span>1234567</span></li>
-                                            <li><span>BIOS:</span><span>1234567</span></li>
-                                          </ul>  
-                                      </div>
-                                  </div>
+               
+                <!--Daily Calorie and Weight Section starts-->
+                <div class="row margin-top-10">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary user-info">
+                              <div class="panel-heading orange">Daily Calorie Summary
+                                    <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
                               </div>
-                          </section>
-                     </div>
-                     <div class="col-md-6">   
-                        <section class="panel panel-info">
-                              <div class="weather-bg">
-                                  <div class="panel-heading">
-                                     <h3 class="panel-title">System Information</h3>
-                                  </div>
-                                  <div class="panel-body">
-                                      <div class="row">
-                                         <ul>
-                                            <li><span>Time: </span><span>12:17 AM</span></li>
-                                            <li><span id="ipAddress">IP Address:</span><span></span></li>
-                                            <li><span>Security: </span><span>Enabled</span></li>
-                                          </ul>  
-                                      </div>
-                                  </div>
+                              <div class="panel-body">
+                                    <div class="col-md-6">
+                                        <canvas id="dailyCalorieSummaryPieChart" height="217" width="400"></canvas>
+                                        <span id="dailyCalorieSummaryPieChartLegends"></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <table class="table table-striped">
+                                            <thead class="blue-font">
+                                            <tr>
+                                              <th></th>
+                                              <th>Total</th>
+                                              <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                              <th>Calories</th>
+                                              <th>2134</th>
+                                              <th>2250</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td>Carbs</td>
+                                                  <td>72 gms</td>
+                                                  <td>130 gms</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Proteins</td>
+                                                  <td>17 gms</td>
+                                                  <td>100 gms</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Fats</td>
+                                                  <td>12 gms</td>
+                                                  <td>20 gms</td>
+                                                </tr>
+                                            </tbody>
+                                        </table> 
+                                        
+                                    </div>
+                                 
                               </div>
-                          </section>
-                     </div>
+                        </div>
+                    </div>
                 </div>
-                <!--Icons Section Ends-->
-                <!--Right Info Section Starts-->
-                <div class="col-md-6">
-                  <div class="col-md-12">
-                    <div class="col-md-8 system-status">
-                      <h4 class="margin-top-10">System Status</h4>
-                      <h5 class="green-font">Device is working well <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></h5>
+                <!--Daily Calorie and Weight Section ends-->
+
+                <!--Daily Vitamins and Daily Elements Section starts-->
+                <div class="row margin-top-10">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary user-info">
+                              <div class="panel-heading green">Daily Vitamins
+                                    <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="col-md-12">
+                                    <canvas id="dailyVitaminsBarChart" height="270" width="400"></canvas>
+                                    <span id="dailyVitaminsBarLegends"></span>
+                                 </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 margin-top-10">
-                      <button type="button" class="btn btn-primary" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-primary" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-                      </button>
-                      <button type="button" class="btn btn-primary" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                      </button>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary user-info">
+                              <div class="panel-heading pink">Daily Elements
+                                    <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="col-md-3">
+                                    <canvas id="dailyCalorieBreakdownBarChart" height="270" width="400"></canvas>
+                                    <span id="dailyElementsBarLegends"></span>
+                                 </div>
+                              </div>
+                        </div>
+                       
+                    </div> 
+                </div>
+                <!--Daily Vitamins and Daily Elements Section ends-->
+
+                <!--Diet search section starts-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center">Search for Recipes and create your diet</h2>
                     </div>
-                  </div>
-                  <div class="col-md-12 pad20" role="tabpanel">
-                      <!-- Nav tabs -->
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#heart-rate" aria-controls="heart-rate" role="tab" data-toggle="tab"><i class="fa fa-heartbeat"></i> Heart Rate</a></li>
-                        <li role="presentation"><a href="#oxygen-level" aria-controls="oxygen-level" role="tab" data-toggle="tab"><i class="fa fa-circle-thin"></i> Oxygen Level</a></li>
-                        <li role="presentation"><a href="#blood-pressure" aria-controls="blood-pressure" role="tab" data-toggle="tab"><i class="fa fa-tint"></i> Blood Pressure</a></li>
-                        <li role="presentation"><a href="#weight" aria-controls="weight" role="tab" data-toggle="tab"><i class="fa fa-cubes"></i> Weight</a></li>
-                        <li role="presentation"><a href="#bloodSugar" aria-controls="bloodSugar" role="tab" data-toggle="tab"><i class="fa fa-cube"></i> Blood Sugar</a></li>
-                      </ul>
-                      <!-- Tab panes -->
-                      <div class="tab-content">
-                        <!--Heart Rate Map Starts-->
-                        <div role="tabpanel" class="tab-pane active" id="heart-rate">
-                          <div class="panel terques-chart">
-                            <div class="panel-body chart-texture">
-                                <div class="chart">
-                                    <div class="heading">
-                                        <span>Current Heart Rate: 72</span>
-                                    </div>
-                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
+                </div>
+
+                <div class="row form-pink padding-bottom-20">
+                    <div class="col-md-12">
+                         <form>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                  <select class="form-control m-bot15">
+                                    <option>Recipe in Category..</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-4">
+                                  <select class="form-control m-bot15">
+                                    <option>Diet Type...</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-4">
+                                  <select class="form-control m-bot15">
+                                    <option>Medical Diet..</option>
+                                  </select>
                                 </div>
                             </div>
-                            <div class="chart-tittle">
-                                <span class="title">Last Heart Rate Recorded: 70</span>
-                            </div>
-                          </div>
-                        </div>
-                        <!--Heart Rate Map Ends-->
-                        <!--Oxygen Level Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="oxygen-level">
-                           <div class="panel green-chart">
-                              <div class="panel-body">
-                                  <div class="chart">
-                                      <div class="heading">
-                                          <span>Current Oxygen Level: xyz</span>
-                                      </div>
-                                      <div id="barchart"></div>
-                                  </div>
-                              </div>
-                              <div class="chart-tittle">
-                                  <span class="title">Last Recorded Oxygen Level: </span>
-                              </div>
-                           </div>
-                        </div>
-                        <!--Oxygen Level Map Ends-->
-                        <!--Blood Pressure Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="blood-pressure">
-                           <div class="panel terques-chart">
-                            <div class="panel-body chart-texture">
-                                <div class="chart">
-                                    <div class="heading">
-                                        <span>Current Blood Pressure</span>
-                                        <strong>72</strong>
-                                    </div>
-                                    <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
+                             <div class="form-group">
+                                <div class="col-sm-4">
+                                  <select class="form-control m-bot15">
+                                    <option>Sort Recipes by...</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-4">
+                                  <select class="form-control m-bot15">
+                                    <option>Health Improvement Diet...</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-4">
+                                  <select class="form-control m-bot15">
+                                    <option>Mood Improvement...</option>
+                                  </select>
                                 </div>
                             </div>
-                            <div class="chart-tittle">
-                                <span class="title">Last Recorded Blood Pressure: abc</span>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                  <select class="form-control m-bot15">
+                                    <option>Recipe Cooking Method...</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-8">
+                                    <input class="wysihtml5 form-control" id="txtAreaRecipeDesc" rows= "5" placeholder="Search by keyword, ingredients, serving size and description"></input>
+                                </div>
+                            </div>  
+                            <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-success center-block">Search for available Diets</button>
                             </div>
-                          </div>
                         </div>
-                        <!--Blood Pressure Map Ends-->
-                        <!--Weight Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="weight">
-                          <div class="panel green-chart">
-                          <div class="panel-body">
-                              <div class="chart">
-                                  <div class="heading">
-                                      <span>Current Weight: 70Kgs</span>
-                                  </div>
-                                  <div id="barchart"></div>
-                              </div>
-                          </div>
-                          <div class="chart-tittle">
-                              <span class="title">Last Recorded Weight: 78Kgs</span>
-                          </div>
-                         </div>
                         </div>
-                        <!--Weight Map Ends-->
-                          <!--Blood Sugar Map Starts-->
-                        <div role="tabpanel" class="tab-pane" id="bloodSugar">
-                          <div class="panel green-chart">
-                          <div class="panel-body">
-                              <div class="chart">
-                                  <div class="heading">
-                                      <span>Current Blood Sugar: 70</span>
-                                  </div>
-                                  <div id="barchart"></div>
-                              </div>
-                          </div>
-                          <div class="chart-tittle">
-                              <span class="title">Last Recorded Blood Sugar: 78</span>
-                          </div>
-                         </div>
-                        </div>
-                        <!--Blood Sugar Map Ends-->
-                      </div>
-                  </div>
-                   <div class="col-md-12">
-                        <ul class="device-info">
-                          <li>
-                            <a href=""><i class="fa fa-hand-o-right fa-lg"></i> The storage pool 'SP3' is faulted dur to failure</a>
-                          </li>
-                           <li>
-                            <a href=""> <i class="fa fa-hand-o-right fa-lg"></i> Support access is currently enabled</a>
-                          </li>
-                           <li>
-                            <a href=""><i class="fa fa-hand-o-right fa-lg"></i> Your device software has been upgraded to version 2.5.3.2625</a>
-                          </li>
-                        </ul>
+                        </form>
                     </div>
-                    <!--Morris Chart Starts-->
-                      <div class="col-lg-12 margin-top-10">
-                          <section class="panel">
-                              <header class="panel-heading panel-title">
-                                  Pedometer Output
-                              </header>
-                              <div class="panel-body">
-                                  <div id="pedoMeter" class="graph"></div>
-                              </div>
-                          </section>
-                      </div>
-                    <!--Morris Chart Ends-->
-                </div>  
-                <!--Right Info Section Ends-->
-              </div>
-              <!--state overview end-->
-          </section>
+                </div>
+                <!--Diet search section ends-->
+
+                <!--Diet Drop section starts-->
+                <div class="row margin-top-10">
+
+                    <!--List of available recipes-->
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <header class="panel-heading">
+                              List of Available Diets (Add diets to create your Diet List)
+                              <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                              </span>
+                            </header>
+                        <div class="panel-body">
+                             <table class="table" id="tblAvailableDiets">
+                                    <thead>
+                                    <tr>
+                                        <th>Meal Image</th>
+                                        <th>Meal Description</th>
+                                        <th>Meal Values</th>
+                                        <th>Add</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                      </td>
+                                      <td>
+                                        <input type="checkbox" id="chkDiet" onclick="createDiet(this)"/>
+                                      </td>
+                                        </tr>
+                                        <tr>
+                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Kale Salad with Pinenuts</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                      </td>
+                                      <td>
+                                        <input type="checkbox" onclick="createDiet(this)"/>
+                                      </td>
+                                        </tr>
+                                    </tbody>
+                              </table>  
+                        </div>
+                        </div>
+                    </div> 
+
+                    <!--List of My Diet-->
+                     <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <header class="panel-heading">
+                              List of My Diet
+                              <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                              </span>
+                            </header>
+                        <div class="panel-body">
+                             <table class="table" id="tblListDiets">
+                                  <thead>
+                                  <tr>
+                                      <th>Meal Image</th>
+                                      <th>Meal Description</th>
+                                      <th>Meal Values</th>
+                                      <th>Delete</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Toasted Hazelnuts Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                      </td>
+                                      <td>
+                                        <button class="btn btn-danger btn-sm pull-right" onclick="deleteDietList(this)">
+                                            <i class="fa fa-trash-o"></i>
+                                        </button>
+                                      </td>
+                                  </tr>
+                                   <tr>
+                                      <td><img src="img/food.jpg" style="width: 100px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Spinach Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                      </td>
+                                      <td>
+                                        <button class="btn btn-danger btn-sm pull-right" onclick="deleteDietList(this)">
+                                            <i class="fa fa-trash-o"></i>
+                                        </button>
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                        </div>
+                        </div>
+                    </div> 
+
+                </div>    
+
+                <!--Diet Drop section ends-->
+            </section>
       </section>
       <!--main content end-->
 
@@ -935,13 +971,13 @@
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
     <script src="js/jquery.sparkline.js" type="text/javascript"></script>
-    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-    <script src="js/owl.carousel.js" ></script>
     <script src="js/jquery.customSelect.min.js" ></script>
     <script src="js/respond.min.js" ></script>
-    <script src="assets/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
-    <script src="assets/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
-
+    <script src="assets/chart-master/Chart.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/jquery-multi-select/js/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="assets/jquery-multi-select/js/jquery.quicksearch.js"></script>
+    
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
 
@@ -950,21 +986,6 @@
 
     <!--script for this page-->
     <script src="js/sparkline-chart.js"></script>
-    <script src="js/easy-pie-chart.js"></script>
-    <script src="js/count.js"></script>
-    <script src="js/morris-script.js"></script>
-
-  <script>
-
-      //custom select box
-
-      $(function(){
-          $('select.styled').customSelect();
-          $("#ipAddress").html("IP Address: "+ myip);
-      });
-
-  </script>
-  <script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
-
+    <script src="js/create_diet.js"></script>
   </body>
 </html>
