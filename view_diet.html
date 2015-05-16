@@ -8,7 +8,7 @@
     <meta name="keyword" content="Medical Dashboard-DietInformation">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Bluetooth Device Dashboard</title>
+    <title>View Diet</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -374,8 +374,9 @@
                       </a>
                         <ul class="sub">
                             <li><a  href="diet.html">Summary</a></li>
+                            <li><a  href="create_goal.html">Create Goal</a></li>
                             <li><a  href="create_diet.html">Create Diet</a></li>
-                            <li class="active"><a  href="view_diet.html">View Diet</a></li>
+                            <li  class="active"><a  href="view_diet.html">View Diet</a></li>
                             <li><a  href="add_recipe.html">Add Recipe</a></li>
                         </ul>
                       
@@ -485,7 +486,14 @@
 
             <div class="row">
                 <div class="col-md-12 page-name">
-                    <h1><i class="fa fa-cutlery"></i>View Meals</h1>
+                    <h1><i class="fa fa-cutlery"></i>View Meals
+                        <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-success btn-sm">View Daily Diet Analysis</button>
+                              <button type="button" class="btn btn-warning btn-sm">View Weekly Diet Analysis</button>
+                              <button type="button" class="btn btn-danger btn-sm">View Monthly Diet Analysis</button>
+                        </div> 
+                            
+                    </h1>
                   <div class="col-md-12">
                     <i class="fa fa-info-circle"></i> By default daily meals list is displayed
                       <div class="input-group input-large" data-date="13/07/2013" data-date-format="mm/dd/yyyy">

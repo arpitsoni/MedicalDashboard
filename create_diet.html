@@ -17,6 +17,7 @@
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="assets/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker-bs3.css" />
     
       <!--right slidebar-->
     <link href="css/slidebars.css" rel="stylesheet">
@@ -454,6 +455,7 @@
                       </a>
                         <ul class="sub">
                             <li><a  href="diet.html">Summary</a></li>
+                            <li><a  href="create_goal.html">Create Goal</a></li>
                             <li class="active"><a  href="create_diet.html">Create Diet</a></li>
                             <li><a  href="view_diet.html">View Diet</a></li>
                             <li><a  href="add_recipe.html">Add Recipe</a></li>
@@ -566,115 +568,22 @@
                 <div class="row">
                     <div class="col-md-12 page-name">
 
-                        <h1><i class="fa fa-cutlery"></i>Create Diet
-                            <div class="btn-group" role="group">
-                              <button type="button" class="btn btn-success btn-sm">View Daily Diet Analysis</button>
-                              <button type="button" class="btn btn-warning btn-sm">View Weekly Diet Analysis</button>
-                              <button type="button" class="btn btn-danger btn-sm">View Monthly Diet Analysis</button>
-                            </div> 
-                            <a href="#dietListSection" class="btn btn-primary btn-sm">Create My Diet</a>
-                        </h1>
+                       <h1><i class="fa fa-cutlery"></i>Search for Recipes and create diet</h1>
+
+                       <div class="col-md-12">
+                       <i class="fa fa-info-circle"></i> By default daily meals list is displayed
+                       
+                  </div>
 
                     </div>
                 </div>
                
-                <!--Daily Calorie and Weight Section starts-->
-                <div class="row margin-top-10">
-                    <div class="col-md-12">
-                        <div class="panel panel-primary user-info">
-                              <div class="panel-heading orange">Daily Calorie Summary
-                                    <span class="tools pull-right">
-                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                    </span>
-                              </div>
-                              <div class="panel-body">
-                                    <div class="col-md-6">
-                                        <canvas id="dailyCalorieSummaryPieChart" height="217" width="400"></canvas>
-                                        <span id="dailyCalorieSummaryPieChartLegends"></span>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <table class="table table-striped">
-                                            <thead class="blue-font">
-                                            <tr>
-                                              <th></th>
-                                              <th>Total</th>
-                                              <th>Target</th>
-                                            </tr>
-                                            <tr>
-                                              <th>Calories</th>
-                                              <th>2134</th>
-                                              <th>2250</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                  <td>Carbs</td>
-                                                  <td>72 gms</td>
-                                                  <td>130 gms</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>Proteins</td>
-                                                  <td>17 gms</td>
-                                                  <td>100 gms</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>Fats</td>
-                                                  <td>12 gms</td>
-                                                  <td>20 gms</td>
-                                                </tr>
-                                            </tbody>
-                                        </table> 
-                                        
-                                    </div>
-                                 
-                              </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Daily Calorie and Weight Section ends-->
-
-                <!--Daily Vitamins and Daily Elements Section starts-->
-                <div class="row margin-top-10">
-                    <div class="col-md-6">
-                        <div class="panel panel-primary user-info">
-                              <div class="panel-heading green">Daily Vitamins
-                                    <span class="tools pull-right">
-                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                    </span>
-                              </div>
-                              <div class="panel-body">
-                                 <div class="col-md-12">
-                                    <canvas id="dailyVitaminsBarChart" height="270" width="400"></canvas>
-                                    <span id="dailyVitaminsBarLegends"></span>
-                                 </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-primary user-info">
-                              <div class="panel-heading pink">Daily Elements
-                                    <span class="tools pull-right">
-                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                    </span>
-                              </div>
-                              <div class="panel-body">
-                                 <div class="col-md-3">
-                                    <canvas id="dailyCalorieBreakdownBarChart" height="270" width="400"></canvas>
-                                    <span id="dailyElementsBarLegends"></span>
-                                 </div>
-                              </div>
-                        </div>
-                       
-                    </div> 
-                </div>
-                <!--Daily Vitamins and Daily Elements Section ends-->
-
                 <!--Diet search section starts-->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-12">
                         <h2 class="text-center">Search for Recipes and create your diet</h2>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row form-pink padding-bottom-20">
                     <div class="col-md-12">
@@ -733,6 +642,17 @@
                     </div>
                 </div>
                 <!--Diet search section ends-->
+
+                <div class="row margin-top-10">
+                    <div class="col-md-12">
+                        <h3>Select dates to create the Diet</h3>
+                    <div class="input-group input-large" data-date="13/07/2013" data-date-format="mm/dd/yyyy">
+                          <input type="text" placeholder="Create Diet From Date" class="form-control dpd1" name="from">
+                          <span class="input-group-addon">To</span>
+                          <input type="text" placeholder="Create Diet To Date" class="form-control dpd2" name="to">
+                       </div>
+                    </div>   
+                </div>
 
                 <!--Diet Drop section starts-->
                 <div class="row margin-top-10" id="dietListSection">
@@ -958,6 +878,97 @@
                 </div>    
 
                 <!--Diet Drop section ends-->
+
+                <!--Daily Calorie and Weight Section starts-->
+                <div class="row margin-top-10">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary user-info">
+                              <div class="panel-heading orange">Diet Calorie Summary
+                                    <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
+                              </div>
+                              <div class="panel-body">
+                                    <div class="col-md-6">
+                                        <canvas id="dailyCalorieSummaryPieChart" height="217" width="400"></canvas>
+                                        <span id="dailyCalorieSummaryPieChartLegends"></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <table class="table table-striped">
+                                            <thead class="blue-font">
+                                            <tr>
+                                              <th></th>
+                                              <th>Total</th>
+                                              <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                              <th>Calories</th>
+                                              <th>2134</th>
+                                              <th>2250</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td>Carbs</td>
+                                                  <td>72 gms</td>
+                                                  <td>130 gms</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Proteins</td>
+                                                  <td>17 gms</td>
+                                                  <td>100 gms</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Fats</td>
+                                                  <td>12 gms</td>
+                                                  <td>20 gms</td>
+                                                </tr>
+                                            </tbody>
+                                        </table> 
+                                        
+                                    </div>
+                                 
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Daily Calorie and Weight Section ends-->
+
+                <!--Daily Vitamins and Daily Elements Section starts-->
+                <div class="row margin-top-10">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary user-info">
+                              <div class="panel-heading green">Diet Vitamins
+                                    <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="col-md-12">
+                                    <canvas id="dailyVitaminsBarChart" height="270" width="400"></canvas>
+                                    <span id="dailyVitaminsBarLegends"></span>
+                                 </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary user-info">
+                              <div class="panel-heading pink">Diet Elements
+                                    <span class="tools pull-right">
+                                        <a href="javascript:;" class="fa fa-chevron-down"></a>
+                                    </span>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="col-md-3">
+                                    <canvas id="dailyCalorieBreakdownBarChart" height="270" width="400"></canvas>
+                                    <span id="dailyElementsBarLegends"></span>
+                                 </div>
+                              </div>
+                        </div>
+                       
+                    </div> 
+                </div>
+                <!--Daily Vitamins and Daily Elements Section ends-->
             </section>
       </section>
       <!--main content end-->
@@ -1075,6 +1086,9 @@
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/jquery-multi-select/js/jquery.multi-select.js"></script>
     <script type="text/javascript" src="assets/jquery-multi-select/js/jquery.quicksearch.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
     
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
