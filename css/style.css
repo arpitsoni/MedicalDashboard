@@ -88,6 +88,10 @@ body {
     background-color: aliceblue;
 }
 
+.background-light-violet{
+    background-color: rgb(219, 196, 240);
+}
+
 ul li {
     list-style: none;
 }
@@ -917,6 +921,10 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .state-overview .blue {
     background: #57c8f2;
+}
+
+.state-overview .gray {
+    background: gray;
 }
 
 .page-name h1 {
@@ -6064,4 +6072,9 @@ a.guest-on i {
 
 #createRecipeDiv .panel-body{
     background-color: rgb(249, 250, 249);
+}
+
+.slick-slide{
+    background-color: rgb(253, 253, 253);
+    margin: 10px;
 }
