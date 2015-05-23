@@ -8,7 +8,7 @@
     <meta name="keyword" content="Medical Dashboard-Workout">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Diet</title>
+    <title>Workout</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -443,7 +443,7 @@
                                         <a href="javascript:;" class="fa fa-chevron-down"></a>
                                     </span>
                               </div>
-                              <div class="panel-body background-light-violet">
+                              <div class="panel-body">
                                  
                                  <div class="col-md-12">
                                     <table class="table table-striped">
@@ -592,109 +592,77 @@
             </div>
             <!--Latest Workout Slider ends-->
 
-            <!--Daily Calorie and Weight Section starts-->
-            <div class="row margin-top-10">
-                 <div class="col-md-6">
-                    <div class="panel panel-primary user-info">
-                          <div class="panel-heading orange">Daily Calorie Summary
-                                <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                </span>
-                          </div>
-                          <div class="panel-body">
-                                <div class="col-md-6">
-                                    <canvas id="dailyCalorieSummaryPieChart" height="265" width="240"></canvas>
-                                    <span id="dailyCalorieSummaryPieChartLegends"></span>
-                                </div>
-                                <div class="col-md-6">
-                                    <table class="table table-striped">
-                                        <thead class="blue-font">
-                                        <tr>
-                                          <th></th>
-                                          <th>Total</th>
-                                          <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                          <th>Calories</th>
-                                          <th>2134</th>
-                                          <th>2250</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                              <td>Carbs</td>
-                                              <td>72 gms</td>
-                                              <td>130 gms</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Proteins</td>
-                                              <td>17 gms</td>
-                                              <td>100 gms</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Fats</td>
-                                              <td>12 gms</td>
-                                              <td>20 gms</td>
-                                            </tr>
-                                        </tbody>
-                                  </table> 
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="btn-group" role="group">
-                                          <button type="button" class="btn btn-danger btn-sm">Daily</button>
-                                          <button type="button" class="btn btn-danger btn-sm">Weekly</button>
-                                          <button type="button" class="btn btn-danger btn-sm">Monthly</button>
-                                        </div> 
-                                    </div>
-                                   </div> 
-                                </div>
-                             
-                          </div>
-                    </div>
+            <!--Quick Display Workout Stats starts-->
+            
+              <div class="row margin-top-10">
+                    <div class="col-md-12">
+                        <h3>Select dates to view Workout Stats</h3>
+                    <div class="input-group input-large" data-date="13/07/2013" data-date-format="mm/dd/yyyy">
+                          <input type="text" placeholder="From Date" class="form-control dpd1" name="from">
+                          <span class="input-group-addon">To</span>
+                          <input type="text" placeholder="From Date" class="form-control dpd2" name="to">
+                       </div>
+                    </div>   
                 </div>
-                <div class="col-md-6">
-                   <div class="panel panel-primary user-info">
-                          <div class="panel-heading violet">Weight
-                                <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                </span>
+
+            <div class="row margin-top-10">
+                <div class="col-md-12">
+                    <div class="row state-overview">
+                  <div class="col-lg-3 width-20-per col-sm-6">
+                      <section class="panel">
+                          <div class="symbol terques">
+                            <p>WORKOUTS COMPLETED</p>
+                              <h2>2</h2>
                           </div>
-                          <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <canvas id="weightLineChart" height="280" width="400"></canvas>
-                                </div>
-                            </div>  
-                            
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 width-20-per col-sm-6">
+                      <section class="panel">
+                          <div class="symbol red">
+                            <p>CALORIES BURNED</p>
+                              <h2>690</h2>
                           </div>
-                          <div class="row">
-                                <div class="col-md-6">
-                                    <div class="btn-group center-block" role="group">
-                                      <button type="button" class="btn btn-danger btn-sm">Daily</button>
-                                      <button type="button" class="btn btn-danger btn-sm">Weekly</button>
-                                      <button type="button" class="btn btn-danger btn-sm">Monthly</button>
-                                      <!-- <input type="text" placeholder="add manual weight" class="form-control col-md-4"/>
-                                        <button type="button" class="btn btn-danger btn-sm">Add Manual Weight</button> -->
-                                    </div> 
-                                </div>
-                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                          <input type="text" placeholder="add manual weight" class="form-control"/>
-                                            <a type="button" class="btn btn-primary btn-sm input-group-addon">Add</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>  
-                </div>    
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 width-20-per col-sm-6">
+                      <section class="panel">
+                          <div class="symbol yellow">
+                            <p>DISTANCE TRAVELLED (miles)</p>
+                              <h2>9.99</h2>
+                          </div>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 width-20-per col-sm-6">
+                      <section class="panel">
+                          <div class="symbol blue">
+                            <p>GOALS COMPLETED</p>
+                              <h2>0</h2>
+                          </div>
+                          
+                      </section>
+                  </div>
+                  <div class="col-lg-3 width-20-per col-sm-6">
+                      <section class="panel">
+                          <div class="symbol green">
+                            <p>CHALLENGES COMPLETED</p>
+                            <h2>0</h2>
+                          </div>
+                          
+                      </section>
+                  </div>
+              </div>
+                </div>
             </div>
-            <!--Daily Calorie and Weight Section ends-->
+            <!--Quick Display Workout Stats ends-->
+
             <!--Daily Vitamins and Daily Elements Section starts-->
             <div class="row margin-top-10">
                  <div class="col-md-6">
                     <div class="panel panel-primary user-info">
-                          <div class="panel-heading green">Daily Vitamins
+                          <div class="panel-heading green">REPORTS - Total Activity Time
                                 <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-chevron-down"></a>
                                 </span>
@@ -705,20 +673,14 @@
                                 <span id="dailyVitaminsBarLegends"></span>
                              </div>
                           </div>
-                          <div class="row">
-                            <div class="col-md-12">
-                                <div class="btn-group center-block" role="group">
-                                  <button type="button" class="btn btn-danger btn-sm">Daily</button>
-                                  <button type="button" class="btn btn-danger btn-sm">Weekly</button>
-                                  <button type="button" class="btn btn-danger btn-sm">Monthly</button>
-                                </div> 
-                            </div>
+                          <div class="panel-footer">
+                            
                         </div> 
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-primary user-info">
-                          <div class="panel-heading pink">Daily Elements
+                          <div class="panel-heading pink">SLEEP - Today
                                 <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-chevron-down"></a>
                                 </span>
@@ -729,14 +691,8 @@
                                 <span id="dailyElementsBarLegends"></span>
                              </div>
                           </div>
-                          <div class="row">
-                            <div class="col-md-12">
-                                <div class="btn-group center-block" role="group">
-                                  <button type="button" class="btn btn-danger btn-sm">Daily</button>
-                                  <button type="button" class="btn btn-danger btn-sm">Weekly</button>
-                                  <button type="button" class="btn btn-danger btn-sm">Monthly</button>
-                                </div> 
-                            </div>
+                          <div class="panel-footer">
+                            
                         </div> 
                     </div>
                    

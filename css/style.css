@@ -924,7 +924,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .state-overview .gray {
-    background: gray;
+    background: rgb(50, 49, 49);
 }
 
 .page-name h1 {
@@ -6077,4 +6077,8 @@ a.guest-on i {
 .slick-slide{
     background-color: rgb(253, 253, 253);
     margin: 10px;
+}
+
+.width-20-per{
+    width:20%;
 }
