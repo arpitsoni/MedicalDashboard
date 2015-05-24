@@ -40,15 +40,17 @@
 
   <section id="container" >
      <!-- Workout ViewDetails Modal Starts -->
-    <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="workoutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="reportModalLabel"> Vital Report</h4><!--Title will change based on the Report Type-->
+            <h4 class="modal-title" id="reportModalLabel"> Workout Report</h4><!--Title will change based on the Report Type-->
           </div>
           <div class="modal-body">
-              <div id="hero-bar" class="graph"></div>
+              <div id="hero-bar" class="graph">
+                Data can come here, please let me know what kind of data will be displayed
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -470,7 +472,7 @@
                                   </table>
                                   <div class="row">
                                     <div class="col-md-12 ">
-                                        <button type="button" class="btn btn-danger btn-sm center-block">View Details</button>
+                                        <button type="button" class="btn btn-danger btn-sm center-block" data-toggle="modal" data-target="#workoutModal">View Details</button>
                                     </div>
                                    </div> 
                                  </div>
@@ -494,93 +496,93 @@
                                     <div class="col-md-10 col-md-offset-1">
                                         <div class="your-class">
                                             <div class="col-md-3">
-                                                <h4>Nov 8, 4:33pm</h4>
+                                                <h4 class="blue-font">Nov 8, 4:33pm</h4>
                                                 <p>
-                                                    <span>Time</span><span class="pull-right">0:20:02</span>
+                                                    <span>Time</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                  <p>
-                                                    <span>Distance</span><span class="pull-right">0:20:02</span>
+                                                    <span>Distance(mi)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                  <p>
-                                                    <span>Burned</span><span class="pull-right">0:20:02</span>
+                                                    <span>Burned(cal)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                 <p>
-                                                    <button class="btn btn-primary btn-xs center-block">View Details</button>
+                                                    <a class="btn btn-primary btn-xs center-block" data-toggle="modal" data-target="#workoutModal">View Details</a>
                                                 </p>
                                             </div>
                                             <div class="col-md-3">
-                                                <h4>Nov 8, 4:33pm</h4>
+                                                <h4 class="blue-font">Nov 8, 4:33pm</h4>
                                                 <p>
-                                                    <span>Time</span><span class="pull-right">0:20:02</span>
+                                                    <span>Time</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                  <p>
-                                                    <span>Distance</span><span class="pull-right">0:20:02</span>
+                                                    <span>Distance(mi)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                  <p>
-                                                    <span>Burned</span><span class="pull-right">0:20:02</span>
+                                                    <span>Burned(cal)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                 <p>
-                                                    <button class="btn btn-primary btn-xs center-block">View Details</button>
+                                                    <a class="btn btn-primary btn-xs center-block" data-toggle="modal" data-target="#workoutModal">View Details</a>
                                                 </p>
                                             </div>
                                             <div class="col-md-3">
-                                                <h4>Nov 8, 4:33pm</h4>
+                                                <h4 class="blue-font">Nov 8, 4:33pm</h4>
                                                 <p>
-                                                    <span>Time</span><span class="pull-right">0:20:02</span>
+                                                    <span>Time</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                  <p>
-                                                    <span>Distance</span><span class="pull-right">0:20:02</span>
+                                                    <span>Distance(mi)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                  <p>
-                                                    <span>Burned</span><span class="pull-right">0:20:02</span>
+                                                    <span>Burned(cal)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                 <p>
-                                                    <button class="btn btn-primary btn-xs center-block">View Details</button>
+                                                    <a class="btn btn-primary btn-xs center-block" data-toggle="modal" data-target="#workoutModal">View Details</a>
                                                 </p>
                                             </div>
                                             <div class="col-md-3">
-                                                <h4>Nov 8, 4:33pm</h4>
+                                                <h4 class="blue-font">Nov 8, 4:33pm</h4>
                                                 <p>
-                                                    <span>Time</span><span class="pull-right">0:20:02</span>
+                                                    <span>Time</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                  <p>
-                                                    <span>Distance</span><span class="pull-right">0:20:02</span>
+                                                    <span>Distance(mi)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                  <p>
-                                                    <span>Burned</span><span class="pull-right">0:20:02</span>
+                                                    <span>Burned(cal)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                 <p>
-                                                    <button class="btn btn-primary btn-xs center-block">View Details</button>
+                                                    <a class="btn btn-primary btn-xs center-block" data-toggle="modal" data-target="#workoutModal">View Details</a>
                                                 </p>
                                             </div>
                                             <div class="col-md-3">
-                                                <h4>Nov 8, 4:33pm</h4>
+                                                <h4 class="blue-font">Nov 8, 4:33pm</h4>
                                                 <p>
-                                                    <span>Time</span><span class="pull-right">0:20:02</span>
+                                                    <span>Time</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                  <p>
-                                                    <span>Distance</span><span class="pull-right">0:20:02</span>
+                                                    <span>Distance(mi)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                  <p>
-                                                    <span>Burned</span><span class="pull-right">0:20:02</span>
+                                                    <span>Burned(cal)</span><span class="pull-right green-font">0</span>
                                                 </p>
                                                 <p>
-                                                    <button class="btn btn-primary btn-xs center-block">View Details</button>
+                                                    <a class="btn btn-primary btn-xs center-block" data-toggle="modal" data-target="#workoutModal">View Details</a>
                                                 </p>
                                             </div>
                                             <div class="col-md-3">
-                                                <h4>Nov 8, 4:33pm</h4>
+                                                <h4 class="blue-font">Nov 8, 4:33pm</h4>
                                                 <p>
-                                                    <span>Time</span><span class="pull-right">0:20:02</span>
+                                                    <span>Time</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                  <p>
-                                                    <span>Distance</span><span class="pull-right">0:20:02</span>
+                                                    <span>Distance(mi)</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                  <p>
-                                                    <span>Burned</span><span class="pull-right">0:20:02</span>
+                                                    <span>Burned(cal)</span><span class="pull-right green-font">0:20:02</span>
                                                 </p>
                                                 <p>
-                                                    <button class="btn btn-primary btn-xs center-block">View Details</button>
+                                                    <a class="btn btn-primary btn-xs center-block" data-toggle="modal" data-target="#workoutModal">View Details</a>
                                                 </p>
                                             </div>
                                         </div> 
@@ -611,45 +613,70 @@
                   <div class="col-lg-3 width-20-per col-sm-6">
                       <section class="panel">
                           <div class="symbol terques">
-                            <p>WORKOUTS COMPLETED</p>
-                              <h2>2</h2>
+                            <p class="blue-font">WORKOUTS COMPLETED</p>
+                              <h2 class="green-font">2</h2>
                           </div>
+                          <div class="panel-footer">
+                            <a class="btn btn-primary btn-xs">Edit</a>
+                            <a class="btn btn-warning btn-xs">Save</a>
+                            <a class="btn btn-default btn-xs">Cancel</a>
+                        </div>
                           
                       </section>
                   </div>
                   <div class="col-lg-3 width-20-per col-sm-6">
                       <section class="panel">
                           <div class="symbol red">
-                            <p>CALORIES BURNED</p>
-                              <h2>690</h2>
+                            <p class="blue-font">CALORIES BURNED</p>
+                              <h2 class="green-font">690</h2>
                           </div>
+                          <div class="panel-footer">
+                            <a class="btn btn-primary btn-xs">Edit</a>
+                            <a class="btn btn-warning btn-xs">Save</a>
+                            <a class="btn btn-default btn-xs">Cancel</a>
+                        </div>
                           
                       </section>
                   </div>
                   <div class="col-lg-3 width-20-per col-sm-6">
                       <section class="panel">
                           <div class="symbol yellow">
-                            <p>DISTANCE TRAVELLED (miles)</p>
-                              <h2>9.99</h2>
+                            <p class="blue-font">DISTANCE TRAVELLED (miles)</p>
+                              <h2 class="green-font">9.99</h2>
                           </div>
+                          <div class="panel-footer">
+                            <a class="btn btn-primary btn-xs">Edit</a>
+                            <a class="btn btn-warning btn-xs">Save</a>
+                            <a class="btn btn-default btn-xs">Cancel</a>
+                        </div>
                           
                       </section>
                   </div>
                   <div class="col-lg-3 width-20-per col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                            <p>GOALS COMPLETED</p>
-                              <h2>0</h2>
+                            <p class="blue-font">GOALS COMPLETED</p>
+                              <h2 class="green-font">0</h2>
                           </div>
+                          <div class="panel-footer">
+                            <a class="btn btn-primary btn-xs">Edit</a>
+                            <a class="btn btn-warning btn-xs">Save</a>
+                            <a class="btn btn-default btn-xs">Cancel</a>
+                        </div>
                           
                       </section>
                   </div>
                   <div class="col-lg-3 width-20-per col-sm-6">
                       <section class="panel">
                           <div class="symbol green">
-                            <p>CHALLENGES COMPLETED</p>
-                            <h2>0</h2>
+                            <p class="blue-font">CHALLENGES COMPLETED</p>
+                            <h2 class="green-font">0</h2>
                           </div>
+                          <div class="panel-footer">
+                            <a class="btn btn-primary btn-xs">Edit</a>
+                            <a class="btn btn-warning btn-xs">Save</a>
+                            <a class="btn btn-default btn-xs">Cancel</a>
+                        </div>
                           
                       </section>
                   </div>
@@ -657,6 +684,54 @@
                 </div>
             </div>
             <!--Quick Display Workout Stats ends-->
+
+             <!--Status/steps/connections Graphs Section starts-->
+            <div class="row margin-top-10">
+                <div class="col-md-6">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading Green">Activities</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                
+                            </div>
+                        </div>
+                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                    </div> 
+                </div> 
+                <div class="col-md-3">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading pink">Sleep</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="easy-pie-chart">
+                                    <div class="percentage easyPieChart" data-percent="82" style="width: 175px; height: 135px; line-height: 135px;">
+                                        <span>6 hr 20 min</span>
+                                        <canvas width="175" height="135"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                    </div> 
+                </div> 
+                <div class="col-md-3">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading red">Calories</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <div class="easy-pie-chart">
+                                    <div class="percentage easyPieChart" data-percent="82" style="width: 135px; height: 135px; line-height: 135px;">
+                                        <span>1867</span>
+                                        <canvas width="135" height="135"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                    </div> 
+                </div>  
+            </div>
+            <!--Status/steps/connections Section ends-->
 
             <!--Daily Vitamins and Daily Elements Section starts-->
             <div class="row margin-top-10">
@@ -680,8 +755,9 @@
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-primary user-info">
-                          <div class="panel-heading pink">SLEEP - Today
+                          <div class="panel-heading pink">SLEEP - <span>Today</span> 
                                 <span class="tools pull-right">
+                                    <span>Synced today @ 5:00pm</span>
                                     <a href="javascript:;" class="fa fa-chevron-down"></a>
                                 </span>
                           </div>
@@ -699,33 +775,51 @@
                 </div> 
             </div>
             <!--Daily Vitamins and Daily Elements Section ends-->
-             <!--Circular Graphs Section starts-->
+
+            <!--Circular Graphs Section starts-->
             <div class="row margin-top-10">
                 <div class="col-md-3">
                      <div class="panel panel-primary">
-                        <div class="panel-heading pink">Weight</div>
+                        <div class="panel-heading pink">STEPS - <span>Today</span></div>
                         <div class="panel-body">
                             <div class="col-md-12">
+                                <p>Synced today @ 5:00 PM</p>
                                 <div class="easy-pie-chart">
                                     <div class="percentage easyPieChart" data-percent="82" style="width: 175px; height: 135px; line-height: 135px;">
-                                        <span>182 lbs</span>
+                                        <span>8,253 steps</span>
                                         <canvas width="175" height="135"></canvas>
                                     </div>
                                 </div>
+                                <h4 class="text-center">100% of 8,194</h4>
+                                <p class="text-center">Your Daily Goal</p>
                             </div>
                         </div>
-                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
+                        <div class="panel-footer">
+                            <input class="form-control input-medium default-date-picker"  size="16" type="text" placeholder="provide date" value=""/>
+                            <a class="input-group-addon btn btn-xs btn-primary">Get Steps</a>
+                        </div> 
                     </div> 
                 </div> 
                 <div class="col-md-3">
                      <div class="panel panel-primary">
-                        <div class="panel-heading red">Body Fat</div>
+                        <div class="panel-heading red">CONNECTIONS</div>
                         <div class="panel-body">
                             <div class="col-md-12">
-                                <div class="easy-pie-chart">
-                                    <div class="percentage easyPieChart" data-percent="82" style="width: 135px; height: 135px; line-height: 135px;">
-                                        <span>18.7%</span>
-                                        <canvas width="135" height="135"></canvas>
+                                <ul class="nav nav-tabs">
+                                  <li role="presentation" class="active"><a href="#all" aria-controls="home" role="tab" data-toggle="tab">All</a></li>
+                                  <li role="presentation"><a href="#stage" aria-controls="home" role="tab" data-toggle="tab">Stage</a></li>
+                                  <li role="presentation"><a href="#activity" aria-controls="home" role="tab" data-toggle="tab">Activity</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="all">
+                                        Some data here for ALL, please explain
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane " id="stage">
+                                        Some data here for Steps, please explain
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane " id="activity">
+                                        Some data here for Activity, please explain
                                     </div>
                                 </div>
                             </div>
@@ -733,38 +827,17 @@
                         <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
                     </div> 
                 </div>  
-                <div class="col-md-3">
+                <div class="col-md-6">
                      <div class="panel panel-primary">
-                        <div class="panel-heading Green">BMR</div>
+                        <div class="panel-heading Green">Activities</div>
                         <div class="panel-body">
                             <div class="col-md-12">
-                                <div class="easy-pie-chart">
-                                    <div class="percentage easyPieChart" data-percent="82" style="width: 135px; height: 135px; line-height: 135px;">
-                                        <span>1682.4</span>
-                                        <canvas width="135" height="135"></canvas>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                         <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
                     </div> 
                 </div>  
-                <div class="col-md-3">
-                     <div class="panel panel-primary">
-                        <div class="panel-heading violet">BMI</div>
-                        <div class="panel-body">
-                            <div class="col-md-12">
-                                <div class="easy-pie-chart">
-                                    <div class="percentage easyPieChart" data-percent="82" style="width: 135px; height: 135px; line-height: 135px;">
-                                        <span>22.5</span>
-                                        <canvas width="135" height="135"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
-                    </div> 
-                </div>   
             </div>
             <!--Circular Graphs Section ends-->
             

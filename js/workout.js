@@ -1,32 +1,32 @@
-//Slick slider starts
+
 $(document).ready(function(){
+    //Slick slider starts
       $('.your-class').slick({
           
           centerMode: true,
           slidesToShow: 3,
           slidesToScroll: 3
       });
-    });
+    //Slick slider ends
 
-//Slick slider ends
+    //Default Date
+
+      $('.default-date-picker').datepicker({
+            format: 'mm-dd-yyyy'
+        });
+    });
 
 var DietScript = function () {
 
     //Code to display Daily Elements Bar chart information
     var barDailyElementsData = {
-        labels : ["Sodium","Potassium","Calcium","Carbohydrates","Iron","Protein","Fibre"],
+        labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
         datasets : [
             {   //Values for Individual
                 fillColor : "#46BFBD",
                 strokeColor : "#46BFBD",
                 data : [65,59,90,81,56,55,40],
-                label: "You"
-            },
-            {   //Values by RDA
-                fillColor : "#61E063",
-                strokeColor : "#61E063",
-                data : [65,59,90,81,56,55,40],
-                label: "RDA"
+                label: "Days"
             }
         ]
 
@@ -34,19 +34,13 @@ var DietScript = function () {
 
     //Code to display Daily Vitamins Bar chart information
     var barVitaminsData = {
-        labels : ["Vitamin A","Vitamin B1","Vitamin C","Vitamin D","Vitamin E","Vitamin K","Vitamin B2"],
+        labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
         datasets : [
             {   //Values for Individual
                 fillColor : "#46BFBD",
                 strokeColor : "#46BFBD",
                 data : [65,59,90,81,56,55,40],
-                label: "You"
-            },
-            {    //Values by RDA
-                fillColor : "#F476DA",
-                strokeColor : "#F476DA",
-                data : [65,59,90,81,56,55,40],
-                label: "RDA"
+                label: "Days"
             }
         ]
 

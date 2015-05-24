@@ -20,60 +20,6 @@ body {
     -moz-font-smoothing: antialiased;
 }
 
-/************* Custom Font Colors **************/
-.green-font {
-    color: green;
-}
-
-.red-font{
-    color: red;
-}
-
-.blue-font{
-    color:rgb(5, 17, 98);
-}
-
-.black-font{
-    color: #000000;
-}
-
-.form-pink{
-    background-color: rgba(245, 11, 11, 0.57);
-}
-
-.margin-top-5 {
-    margin-top: 5px;
-}
-
-.margin-top-10 {
-    margin-top: 10px;
-}
-
-.margin-right-4{
-    margin-right: 4px;
-}
-
-.pad20 {
-    padding-top: 20px;
-}
-.padding-bottom-20{
-    padding-bottom: 20px;
-}
-
-.tab-content {
-    margin-top: 1px;
-}
-
-.width74{
-    width:74px;
-}
-
-.font-12{
-    font-size: 12px;
-}
-.font-bold{
-    font-weight: bold;
-}
 
 .med-name{
     font-size: 14px;
@@ -6078,6 +6024,62 @@ a.guest-on i {
     background-color: rgb(253, 253, 253);
     margin: 10px;
 }
+
+/************* Custom Font Colors **************/
+.green-font {
+    color: green;
+}
+
+.red-font{
+    color: red;
+}
+
+.blue-font{
+    color:rgb(5, 17, 98);
+}
+
+.black-font{
+    color: #000000;
+}
+
+.form-pink{
+    background-color: rgba(245, 11, 11, 0.57);
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-right-4{
+    margin-right: 4px;
+}
+
+.pad20 {
+    padding-top: 20px;
+}
+.padding-bottom-20{
+    padding-bottom: 20px;
+}
+
+.tab-content {
+    margin-top: 1px;
+}
+
+.width74{
+    width:74px;
+}
+
+.font-12{
+    font-size: 12px;
+}
+.font-bold{
+    font-weight: bold;
+}
+
 
 .width-20-per{
     width:20%;
