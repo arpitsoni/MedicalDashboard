@@ -10,6 +10,14 @@
 
     <title>Workout</title>
 
+     <style>
+      html, body, #map-canvas {
+        height: 400px;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
@@ -329,12 +337,18 @@
                       
                   </li>
 
-                  <li>
-                      <a href="workout.html" class="active" >
+                   <li class="sub-menu">
+                      <a href="workout.html" class="active">
                           <i class="fa fa-cogs"></i>
                           <span>Workout</span>
                       </a>
-                     
+                       <ul class="sub">
+                            <li class="active"><a  href="workout.html">Summary</a></li>
+                            <li><a  href="create_workout_goal.html">Create Workout Goal</a></li>
+                            <li><a  href="create_workout.html">Create Workout</a></li>
+                            <li><a  href="view_workout.html">View Workouts</a></li>
+                            <li><a  href="add_workout.html">Add Workout</a></li>
+                      </ul>
                   </li>
                   <li>
                       <a target="_blank" href="http://creative.aargss.com/SocialMedia/">
@@ -692,7 +706,20 @@
                         <div class="panel-heading Green">Activities</div>
                         <div class="panel-body">
                             <div class="col-md-12">
-                                
+                                <h4 class="text-center">Run 1 Short</h4>
+                                <p class="blue-font"><span class="col-md-4 margin-top-10">Mar 11, 2014</span></p>
+                                <p class="blue-font"><span class="col-md-4 margin-top-10">Distance:5.63 mi</span> <span class="col-md-4 margin-top-10">Time:44.03 mi</span></p>
+                                <p class="blue-font">
+                                    <span class="col-md-4 margin-top-10">Pace: 7.49</span>
+                                    <span class="col-md-4 margin-top-10">Calories: 600</span>
+                                    <span class="col-md-4 margin-top-10">Elev Gain: 319 ft</span>
+                                </p>
+                                <!--Map-->
+                                <div class="row">
+                                    <div class="col-md-12 margin-top-10">
+                                        <div id="map-canvas"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="panel-footer">Normal Values 60-100 bpm</div> -->
@@ -961,6 +988,7 @@
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/moment.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script type="text/javascript" src="assets/slick/slick.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     
     <!--right slidebar-->
     <script src="js/slidebars.min.js"></script>
@@ -971,5 +999,36 @@
     <!--script for this page-->
     <script src="js/sparkline-chart.js"></script>
     <script src="js/workout.js"></script>
+    <script>
+        function initialize() {
+          var mapOptions = {
+            zoom: 20,
+            center: new google.maps.LatLng(-27.46758, 153.027892),
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+          };
+
+          var map = new google.maps.Map(document.getElementById('map-canvas'),
+              mapOptions);
+
+          var flightPlanCoordinates = [
+            new google.maps.LatLng(-27.46758, 153.027892),
+            new google.maps.LatLng(-27.46768, 153.027792),
+            new google.maps.LatLng(-27.46778, 153.027992),
+            new google.maps.LatLng(-27.46788, 153.027882)
+          ];
+          var flightPath = new google.maps.Polyline({
+            path: flightPlanCoordinates,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+          });
+
+          flightPath.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
   </body>
 </html>

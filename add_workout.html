@@ -8,7 +8,7 @@
     <meta name="keyword" content="Medical Dashboard-Add Recipe">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Bluetooth Device Dashboard</title>
+    <title>Add Workout</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -386,7 +386,7 @@
                   </li>
 
                   <li class="sub-menu">
-                      <a href="javascript:;" class="active">
+                      <a href="javascript:;">
                           <i class="fa fa-cutlery"></i>
                           <span>Diet</span>
                       </a>
@@ -395,17 +395,23 @@
                             <li><a  href="create_goal.html">Create Goal</a></li>
                             <li><a  href="create_diet.html">Create Diet</a></li>
                             <li><a  href="view_diet.html">View Diet</a></li>
-                            <li class="active"><a  href="add_recipe.html">Add Recipe</a></li>
+                            <li><a  href="add_recipe.html">Add Recipe</a></li>
                         </ul>
                       
                   </li>
 
-                  <li>
-                      <a href="workout.html" >
+                  <li class="sub-menu">
+                      <a href="workout.html" class="active">
                           <i class="fa fa-cogs"></i>
                           <span>Workout</span>
                       </a>
-                     
+                       <ul class="sub">
+                            <li><a  href="workout.html">Summary</a></li>
+                            <li><a  href="create_workout_goal.html">Create Workout Goal</a></li>
+                            <li><a  href="create_workout.html">Create Workout</a></li>
+                            <li><a  href="view_workout.html">View Workouts</a></li>
+                            <li class="active"><a  href="add_workout.html">Add Workout</a></li>
+                      </ul>
                   </li>
                   <li>
                       <a target="_blank" href="http://creative.aargss.com/SocialMedia/">
@@ -505,25 +511,25 @@
             <!--Create Recipe Section Starts-->
             <div class="row margin-top-10" id="createRecipeDiv">
                 <div class="col-md-12 page-name">
-                    <h1><i class="fa fa-cutlery"></i>Add Recipe</h1>
+                    <h1><i class="fa fa-cutlery"></i>Add Workout</h1>
                    <div class="panel panel-primary">
                     <header class="panel-heading">
-                      Create and Save My Recipe
+                      Create and Save My Workout
                       <span class="tools pull-right">
-                        <a href="diet.html" class="btn btn-success btn-sm">Create Goals</a>
-                        <a href="create_diet.html" class="btn btn-success btn-sm">Create Diet</a>
-                        <a href="view_diet.html" class="btn btn-success btn-sm">View Diet</a>
+                        <a href="create_workout_goal.html" class="btn btn-success btn-sm">Create Workout Goals</a>
+                        <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                        <a href="view_workout.html" class="btn btn-success btn-sm">View Workout</a>
                         <a href="javascript:;" class="fa fa-chevron-down"></a>
                       </span>
                     </header>
                     <div class="panel-body">
                         <form>
                             <div class="form-group col-md-4">
-                                <label for="exampleInputEmail1">RECIPE TITLE</label>
-                                <input type="email" class="form-control" id="inpRecipeTitle" placeholder="Enter Recipe Title">
+                                <label for="exampleInputEmail1">WORKOUT TITLE</label>
+                                <input type="email" class="form-control" id="inpRecipeTitle" placeholder="Enter Workout Title">
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="exampleInputFile">UPLOAD RECIPE PHOTO</label>
+                                <label for="exampleInputFile">UPLOAD WORKOUT PHOTO</label>
                                  <div class="fileupload fileupload-new" data-provides="fileupload">
                                         <span class="btn btn-primary btn-file">
                                         <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select image to be Uploaded</span>
@@ -538,10 +544,10 @@
                                 </p>
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="exampleInputFile">UPLOAD RECIPE VIDEO OR PROVIDE A URL</label>
+                                <label for="exampleInputFile">UPLOAD WORKOUT VIDEO OR PROVIDE A URL</label>
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
                                         <span class="btn btn-primary btn-file">
-                                        <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select Recipe video</span>
+                                        <span class="fileupload-new"><i class="fa fa-paper-clip"></i> Select workout video</span>
                                         <span class="fileupload-exists"><i class="fa fa-undo"></i> Change</span>
                                         <input type="file" class="default" id="fuRecipeVideo" />
                                         </span>
@@ -551,34 +557,34 @@
                                  <p><i class="fa fa-info-circle"></i>
                                     Please provide standard video format: MP4
                                 </p>
-                                <input type="input" class="form-control" id="inpRecipeVideo" placeholder="or provide a web URL for your Recipe">
+                                <input type="input" class="form-control" id="inpRecipeVideo" placeholder="or provide a web URL for your Workout">
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Recipe in Category..</option>
+                                    <option>Workout in Category..</option>
                                   </select>
                                 </div>
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Diet Type...</option>
+                                    <option>Workout Type...</option>
                                   </select>
                                 </div>
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Medical Diet..</option>
+                                    <option>Medical Workout..</option>
                                   </select>
                                 </div>
                             </div>
                              <div class="form-group">
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Sort Recipes by...</option>
+                                    <option>Sort Workout by...</option>
                                   </select>
                                 </div>
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Health Improvement Diet...</option>
+                                    <option>Health Improvement Workout...</option>
                                   </select>
                                 </div>
                                 <div class="col-sm-4">
@@ -590,23 +596,23 @@
                             <div class="form-group">
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Recipe Cooking Method...</option>
+                                    <option>Workout Cooking Method...</option>
                                   </select>
                                 </div>
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Recipe Cooking Method...</option>
+                                    <option>Workout Cooking Method...</option>
                                   </select>
                                 </div>
                                 <div class="col-sm-4">
                                   <select class="form-control m-bot15">
-                                    <option>Recipe Cooking Method...</option>
+                                    <option>Workout Cooking Method...</option>
                                   </select>
                                 </div>
                             </div>  
                             <div class="form-group">
-                                <label>SHORT DESCRIPTION ABOUT RECIPE</label>
-                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeDesc" rows= "5" placeholder="Provide a short description about this Recipe"></textarea>
+                                <label>SHORT DESCRIPTION ABOUT WORKOUT</label>
+                                <textarea class="wysihtml5 form-control" id="txtAreaRecipeDesc" rows= "5" placeholder="Provide a short description about this Workout"></textarea>
                             </div>
                             <div class="form-group">
                                 <div class="row">
