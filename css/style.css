@@ -6042,6 +6042,10 @@ a.guest-on i {
     color: #000000;
 }
 
+.white-font{
+    color:#fff;
+}
+
 .form-pink{
     background-color: rgba(245, 11, 11, 0.57);
 }
@@ -6087,4 +6091,8 @@ a.guest-on i {
 
 .width-20-per{
     width:20%;
+}
+
+#accordion a{
+    color: #fff;
 }
