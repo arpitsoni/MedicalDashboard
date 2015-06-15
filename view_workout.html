@@ -10,6 +10,15 @@
 
     <title>View Diet</title>
 
+    <style>
+      #map-biking, #map-running, #map-walking, #map-cycling {
+        height: 300px;
+        margin: 0px;
+        padding: 0px;
+        width: 300px;
+      }
+    </style>
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
@@ -515,307 +524,11 @@
             </div>
             <!--Create Recipe Section Starts-->
             <div class="row margin-top-10" id="createRecipeDiv">
-                <div class="col-md-12">
-                  <!--  <div class="panel panel-primary">
-                    <header class="panel-heading">
-                      My Workout Summary
-                      <span class="tools pull-right">
-                        <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
-                        <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
-                        <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
-                        <a href="javascript:;" class="fa fa-chevron-down"></a>
-                      </span>
-                    </header>
-                    <div class="panel-body">
-                         <table class="table">
-                              <thead>
-                              <tr>
-                                  <th>Workout Image</th>
-                                  <th>Workout Description</th>
-                                  <th>Workout Values</th>
-                                  <th>Workout Eaten ?</th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                              <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font ">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font ">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                 <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                 <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                              
-                              </tbody>
-                          </table>  
-                    </div>
-                   </div> -->
+                <div class="col-md-12">                  
                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <!--Weight Training: Starts-->
                         <div class="panel panel-primary">
-                            <header class="panel-heading" role="tab" id="headingOne">
-                              
+                            <header class="panel-heading" role="tab" id="headingOne">                              
                                 <a class="white-font" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                   Weight Training
                                 </a>
@@ -833,7 +546,166 @@
                                       <th>Workout Image</th>
                                       <th>Workout Description</th>
                                       <th>Workout Values</th>
-                                      <th>Workout Eaten ?</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Bench Press</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Sets</th>
+                                                <th>Repetation</th>
+                                                <th>Weight</th>
+                                                <th>Calories Burned</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">1</td>
+                                                <td class="blue-font">10</td>
+                                                <td class="blue-font">225</td>
+                                                <td class="blue-font">20 Kcl</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                                <td class="blue-font">20 Kcl</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                                <td class="blue-font">20 Kcl</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Weight Training: Ends-->
+                        <!--Running: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingTwo">
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Running
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>                                
+                                </span>
+                            </header>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/running1.png"/></td>
+                                      <td>
+                                        <!-- <div class="row">
+                                            <div class="col-md-12 margin-top-10">
+                                                <div id="map-running"></div>
+                                            </div>
+                                        </div> -->
+                                        <div id="map-running"></div>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Running: Ends-->
+                        <!--Kayaking: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingThree">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Kayaking
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
                                   </tr>
                                   </thead>
                                   <tbody>
@@ -875,843 +747,1408 @@
                                         </div>
                                       </td>
                                       <td>
-                                        <div class="switch switch-square"
+                                        <!-- <div class="switch switch-square"
                                            data-on-label="<i class=' fa fa-check'></i>"
                                            data-off-label="<i class='fa fa-times'></i>">
                                           <input type="checkbox" />
-                                        </div>
+                                        </div> -->
+                                        <input type="checkbox" />
                                       </td>
                                   </tr>
-                                   <tr>
-                                     <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                      <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                        <p>Category: <i class="blue-font">Salads</i></p>
-                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                      </td>
-                                      <td>
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <th>Per Meal Values:</th>
-                                                <th>Total</th>
-                                                <th>Target</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Carbs</td>
-                                                <td class="blue-font">72 gms</td>
-                                                <td class="blue-font">130 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Proteins</td>
-                                                <td class="blue-font">17 gms</td>
-                                                <td class="blue-font">12 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Fats</td>
-                                                <td class="blue-font">100 gms</td>
-                                                <td class="blue-font">20 gms</td>
-                                            </tr>
-                                        </table>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                            </div>
-                                        </div>
-                                      </td>
-                                      <td>
-                                        <div class="switch switch-square"
-                                           data-on-label="<i class=' fa fa-check'></i>"
-                                           data-off-label="<i class='fa fa-times'></i>">
-                                          <input type="checkbox" />
-                                        </div>
-                                      </td>
-                                  </tr>
-                                   <tr>
-                                     <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                      <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                        <p>Category: <i class="blue-font">Salads</i></p>
-                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                      </td>
-                                      <td>
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <th>Per Meal Values:</th>
-                                                <th>Total</th>
-                                                <th>Target</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Carbs</td>
-                                                <td class="blue-font">72 gms</td>
-                                                <td class="blue-font">130 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Proteins</td>
-                                                <td class="blue-font">17 gms</td>
-                                                <td class="blue-font">12 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Fats</td>
-                                                <td class="blue-font">100 gms</td>
-                                                <td class="blue-font">20 gms</td>
-                                            </tr>
-                                        </table>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                            </div>
-                                        </div>
-                                      </td>
-                                      <td>
-                                        <div class="switch switch-square"
-                                           data-on-label="<i class=' fa fa-check'></i>"
-                                           data-off-label="<i class='fa fa-times'></i>">
-                                          <input type="checkbox" />
-                                        </div>
-                                      </td>
-                                  </tr>
-                                   <tr>
-                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                      <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                        <p>Category: <i class="blue-font">Salads</i></p>
-                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                      </td>
-                                      <td>
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <th>Per Meal Values:</th>
-                                                <th>Total</th>
-                                                <th>Target</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Carbs</td>
-                                                <td class="blue-font">72 gms</td>
-                                                <td class="blue-font">130 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Proteins</td>
-                                                <td class="blue-font">17 gms</td>
-                                                <td class="blue-font">12 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Fats</td>
-                                                <td class="blue-font">100 gms</td>
-                                                <td class="blue-font">20 gms</td>
-                                            </tr>
-                                        </table>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                            </div>
-                                        </div>
-                                      </td>
-                                      <td>
-                                        <div class="switch switch-square"
-                                           data-on-label="<i class=' fa fa-check'></i>"
-                                           data-off-label="<i class='fa fa-times'></i>">
-                                          <input type="checkbox" />
-                                        </div>
-                                      </td>
-                                  </tr>
-                                   <tr>
-                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                      <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                        <p>Category: <i class="blue-font">Salads</i></p>
-                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                      </td>
-                                      <td>
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <th>Per Meal Values:</th>
-                                                <th>Total</th>
-                                                <th>Target</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Carbs</td>
-                                                <td class="blue-font">72 gms</td>
-                                                <td class="blue-font">130 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Proteins</td>
-                                                <td class="blue-font">17 gms</td>
-                                                <td class="blue-font">12 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Fats</td>
-                                                <td class="blue-font">100 gms</td>
-                                                <td class="blue-font">20 gms</td>
-                                            </tr>
-                                        </table>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                            </div>
-                                        </div>
-                                      </td>
-                                      <td>
-                                        <div class="switch switch-square"
-                                           data-on-label="<i class=' fa fa-check'></i>"
-                                           data-off-label="<i class='fa fa-times'></i>">
-                                          <input type="checkbox" />
-                                        </div>
-                                      </td>
-                                  </tr>
-                                   <tr>
-                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                      <td>
-                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                        <p>Category: <i class="blue-font">Salads</i></p>
-                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                      </td>
-                                      <td>
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <th>Per Meal Values:</th>
-                                                <th>Total</th>
-                                                <th>Target</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Carbs</td>
-                                                <td class="blue-font">72 gms</td>
-                                                <td class="blue-font">130 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Proteins</td>
-                                                <td class="blue-font">17 gms</td>
-                                                <td class="blue-font">12 gms</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="red-font">Fats</td>
-                                                <td class="blue-font">100 gms</td>
-                                                <td class="blue-font">20 gms</td>
-                                            </tr>
-                                        </table>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                            </div>
-                                        </div>
-                                      </td>
-                                      <td>
-                                        <div class="switch switch-square"
-                                           data-on-label="<i class=' fa fa-check'></i>"
-                                           data-off-label="<i class='fa fa-times'></i>">
-                                          <input type="checkbox" />
-                                        </div>
-                                      </td>
-                                  </tr>
-                                  
                                   </tbody>
                               </table>  
                               </div>
                             </div>
                         </div>
-                      <div class="panel panel-primary">
-                        <header class="panel-heading" role="tab" id="headingTwo">
-                            <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Running
-                            </a>
-                            <span class="tools pull-right">
-                                <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
-                                <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
-                                <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>                                
-                            </span>
-                        </header>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                          <div class="panel-body">
-                            <table class="table">
-                              <thead>
-                              <tr>
-                                  <th>Workout Image</th>
-                                  <th>Workout Description</th>
-                                  <th>Workout Values</th>
-                                  <th>Workout Eaten ?</th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                              <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font ">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font ">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                 <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                 <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
+                        <!--Kayaking: Ends-->
+                        <!--Walking: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingFour">
                               
-                              </tbody>
-                          </table>  
-                          </div>
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Walking
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <div class="row">
+                                            <div class="col-md-12 margin-top-10">
+                                                <div id="map-walking"></div>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="panel panel-primary">
-                        <header class="panel-heading" role="tab" id="headingThree">
-                          
-                            <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Kayaking
-                            </a>
-                            <span class="tools pull-right">
-                                <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
-                                <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
-                                <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
-                            </span>                          
-                        </header>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                          <div class="panel-body">
-                            <table class="table">
-                              <thead>
-                              <tr>
-                                  <th>Workout Image</th>
-                                  <th>Workout Description</th>
-                                  <th>Workout Values</th>
-                                  <th>Workout Eaten ?</th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                              <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font ">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font ">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                 <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                 <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                  <td><img src="img/food.jpg" style="width: 370px;"/></td>
-                                  <td>
-                                    <h4 class="green-font ">Grilled Tuna Salad</h4>
-                                    <p>Category: <i class="blue-font">Salads</i></p>
-                                    <p>Cuisine: <i class="blue-font">Asian</i></p>
-                                    <p>Method: <i class="blue-font">abc, xyz</i></p>
-                                  </td>
-                                  <td>
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Per Meal Values:</th>
-                                            <th>Total</th>
-                                            <th>Target</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Carbs</td>
-                                            <td class="blue-font">72 gms</td>
-                                            <td class="blue-font">130 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Proteins</td>
-                                            <td class="blue-font">17 gms</td>
-                                            <td class="blue-font">12 gms</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="red-font">Fats</td>
-                                            <td class="blue-font">100 gms</td>
-                                            <td class="blue-font">20 gms</td>
-                                        </tr>
-                                    </table>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
-                                        </div>
-                                    </div>
-                                  </td>
-                                  <td>
-                                    <div class="switch switch-square"
-                                       data-on-label="<i class=' fa fa-check'></i>"
-                                       data-off-label="<i class='fa fa-times'></i>">
-                                      <input type="checkbox" />
-                                    </div>
-                                  </td>
-                              </tr>
+                        <!--Walking: Starts-->
+                        <!--Biking: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingFive">
                               
-                              </tbody>
-                          </table>  
-                          </div>
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  Biking
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <div class="row">
+                                            <div class="col-md-12 margin-top-10">
+                                                <div id="map-biking"></div>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
                         </div>
-                      </div>
+                        <!--Biking: Ends-->
+                        <!--Circuit Training: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingSix">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  Circuit Training
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Circuit Training: Ends-->
+                        <!--Treadmill: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingSeven">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                  Treadmill
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Treadmill: Ends-->
+                        <!--Rock Climbing: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingEight">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                  Rock Climbing
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>    
+                        <!--Rock Climbing: Ends-->
+                        <!--Hiking: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingNine">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                  Hiking
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>                                                                 
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Hiking: Ends-->
+                        <!--Backpacking: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingTen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                  Backpacking
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Backpacing: Ends-->
+                        <!--Dancing: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingEleven">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                  Dancing
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>                                
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Dancing: Ends-->
+                        <!--Martial Arts: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingTwelve">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                  Martial Arts
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                       <!--  <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Martial Arts: Ends-->
+                        <!--Kickboxing: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingThirteen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                  Kick Boxing
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Kickboxking: Ends-->
+                        <!--Jiu Jitsu: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingThirteen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                  Jiu Jitsu
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Jiu Jitsy: Ends-->
+                        <!--Yoga: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingFourteen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                  Yoga
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                       <!--  <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Yoga: Ends-->
+                        <!--Soccer: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingFiveteen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveteen" aria-expanded="false" aria-controls="collapseFiveteen">
+                                  Soccer
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseFiveteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveteen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Soccer: Ends-->
+                        <!--Football: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingSixteen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                  Football
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Football: Ends-->
+                        <!--Wrestling: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingSeventeen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                  Wrestling
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Wrestling: Ends-->
+                        <!--Volleyball: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingEighteen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                                  Volley Ball
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Volleryball: Ends-->
+                        <!--Basketball: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingNineteen">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                                  Basketball
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <!-- <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Basketball: Ends-->
+                        <!--Swimming: Starts-->
+                        <div class="panel panel-primary">
+                            <header class="panel-heading" role="tab" id="headingTwenty">
+                              
+                                <a class="white-font" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                                  Swimming
+                                </a>
+                                <span class="tools pull-right">
+                                    <a href="create_workout.html" class="btn btn-success btn-sm">Create Workout</a>
+                                    <a href="workout.html" class="btn btn-success btn-sm">View Workout Goal</a>
+                                    <a href="add_workout.html" class="btn btn-success btn-sm">Add Workout</a>
+                                </span>                          
+                            </header>
+                            <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
+                              <div class="panel-body">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                      <th>Workout Image</th>
+                                      <th>Workout Description</th>
+                                      <th>Workout Values</th>
+                                      <th>Performed?</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><img src="img/food.jpg" style="width: 370px;"/></td>
+                                      <td>
+                                        <h4 class="green-font ">Grilled Tuna Salad</h4>
+                                        <p>Category: <i class="blue-font">Salads</i></p>
+                                        <p>Cuisine: <i class="blue-font">Asian</i></p>
+                                        <p>Method: <i class="blue-font">abc, xyz</i></p>
+                                      </td>
+                                      <td>
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>Per Meal Values:</th>
+                                                <th>Total</th>
+                                                <th>Target</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Carbs</td>
+                                                <td class="blue-font">72 gms</td>
+                                                <td class="blue-font">130 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font ">Proteins</td>
+                                                <td class="blue-font">17 gms</td>
+                                                <td class="blue-font">12 gms</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-font">Fats</td>
+                                                <td class="blue-font">100 gms</td>
+                                                <td class="blue-font">20 gms</td>
+                                            </tr>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-danger">Remove this workout! I don't want to take this</button>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                       <!--  <div class="switch switch-square"
+                                           data-on-label="<i class=' fa fa-check'></i>"
+                                           data-off-label="<i class='fa fa-times'></i>">
+                                          <input type="checkbox" />
+                                        </div> -->
+                                        <input type="checkbox" />
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>  
+                              </div>
+                            </div>
+                        </div>
+                        <!--Swimming: Ends-->
                     </div>
                 </div>
             </div>
@@ -1832,6 +2269,7 @@
     <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/moment.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     
     <!--custom switch-->
     <script src="js/bootstrap-switch.js"></script>
@@ -1845,6 +2283,151 @@
     <!--script for this page-->
     <script src="js/sparkline-chart.js"></script>
     <script src="js/view_diet.js"></script>
-    
+
+    <!--Google Map APIs-->
+    <script>
+    $(document).ready(function(){
+
+    //Start
+    var map;
+
+        function showRunningMap() {
+          var mapOptions = {
+            zoom: 20,
+            center: new google.maps.LatLng(-27.46758, 153.027892),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+
+          map = new google.maps.Map(document.getElementById('map-running'),
+              mapOptions);
+
+          var flightPlanCoordinates = [
+            new google.maps.LatLng(-27.46758, 153.027892),
+            new google.maps.LatLng(-27.46768, 153.027792),
+            new google.maps.LatLng(-27.46778, 153.027992),
+            new google.maps.LatLng(-27.46788, 153.027882)
+          ];
+          var flightPath = new google.maps.Polyline({
+            path: flightPlanCoordinates,
+            geodesic: true,
+            strokeColor: '#0000FF',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+          });
+
+          flightPath.setMap(map);
+        }
+      
+        $('#headingTwo a').click(function (e) {
+              // e.preventDefault();
+              // $(this).collapse('show');
+              resetMap(map);
+              });           
+            
+            function resetMap(m) {
+                x = m.getZoom(); 
+                c = m.getCenter();
+                google.maps.event.trigger(m, 'resize');
+                m.setZoom(x);
+                m.setCenter(c);
+            };
+
+            // $('#headingTwo a').on('click', function(e)
+            //     { alert("hi");
+            //         google.maps.event.trigger(map, 'resize');
+            //     });
+    //End    
+
+
+    //Function to display Running Map
+        // function showRunningMap() {
+        //   var mapOptions = {
+        //     zoom: 20,
+        //     center: new google.maps.LatLng(-27.46758, 153.027892),
+        //     mapTypeId: google.maps.MapTypeId.TERRAIN
+        //   };
+
+        //   var map = new google.maps.Map(document.getElementById('map-running'),
+        //       mapOptions);
+
+        //   var flightPlanCoordinates = [
+        //     new google.maps.LatLng(-27.46758, 153.027892),
+        //     new google.maps.LatLng(-27.46768, 153.027792),
+        //     new google.maps.LatLng(-27.46778, 153.027992),
+        //     new google.maps.LatLng(-27.46788, 153.027882)
+        //   ];
+        //   var flightPath = new google.maps.Polyline({
+        //     path: flightPlanCoordinates,
+        //     geodesic: true,
+        //     strokeColor: '#FF0000',
+        //     strokeOpacity: 1.0,
+        //     strokeWeight: 2
+        //   });
+
+        //   flightPath.setMap(map);
+        // }
+
+        //Function to display Walking Map
+        function showWalkingMap() {
+          var mapOptions = {
+            zoom: 20,
+            center: new google.maps.LatLng(-27.46758, 153.027892),
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+          };
+
+          var map = new google.maps.Map(document.getElementById('map-walking'),
+              mapOptions);
+
+          var flightPlanCoordinates = [
+            new google.maps.LatLng(-27.46758, 153.027892),
+            new google.maps.LatLng(-27.46768, 153.027792),
+            new google.maps.LatLng(-27.46778, 153.027992),
+            new google.maps.LatLng(-27.46788, 153.027882)
+          ];
+          var flightPath = new google.maps.Polyline({
+            path: flightPlanCoordinates,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+          });
+
+          flightPath.setMap(map);
+        }
+
+        //Function to display Walking Map
+        function showBikingMap() {
+          var mapOptions = {
+            zoom: 20,
+            center: new google.maps.LatLng(-27.46758, 153.027892),
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+          };
+
+          var map = new google.maps.Map(document.getElementById('map-biking'),
+              mapOptions);
+
+          var flightPlanCoordinates = [
+            new google.maps.LatLng(-27.46758, 153.027892),
+            new google.maps.LatLng(-27.46768, 153.027792),
+            new google.maps.LatLng(-27.46778, 153.027992),
+            new google.maps.LatLng(-27.46788, 153.027882)
+          ];
+          var flightPath = new google.maps.Polyline({
+            path: flightPlanCoordinates,
+            geodesic: true,
+            strokeColor: '#00FF00',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+          });
+
+          flightPath.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', showRunningMap);        
+        google.maps.event.addDomListener(window, 'load', showWalkingMap);        
+        google.maps.event.addDomListener(window, 'load', showBikingMap);
+
+        });
+    </script>   
   </body>
 </html>
